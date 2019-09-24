@@ -102,14 +102,14 @@
                 </tr>
                 <tr>
                     <td>15:00 - 18:00<br><br>
-                        <p>1500₽</p>
+                        <p style="float: left">1500₽</p>
                         <div class="button-date">Выбрать</div>
                         <p>Осталось — 1 место</p>
                     </td>
                 </tr>
                 <tr>
                     <td>19:00 - 22:00<br><br>
-                        <p>1500₽</p>
+                        <p style="float: left">1500₽</p>
                         <div class="button-date">Выбрать</div>
                         <p>Осталось — 1 место</p><br><br>
                         <p class="cup__in__table"><img src="img/more_fifty.png" alt="">Более 50 отзывов с оценкой</p>
@@ -117,12 +117,37 @@
                 </tr>
             </table>
         </div>
-        <iframe
+        <div id="modalWindow">
+            <img src="img/orange.png" alt="">
+            <p>Где встречаемся?</p>
+            <p>Москва</p>
+            <img src="img/orange.png" alt="">
+            <p>Время съемки</p>
+            <p>3 часа</p>
+            <img src="img/orange.png" alt="">
+            <p>Мест осталось:</p>
+            <p>2 места</p>
+            <div style="margin-top: 10px" class="photographer-photo__modalWindow">
+                <div class="photographer-name__modalWindow">
+                    <p class="name">Марина Иванова</p>
+                    <p class="proffesion">Фотограф</p>
+                    <p class="more-about-photographer">Показать больше информации о фотографе</p>
+                </div>
+            </div>
+        </div>
+        <iframe onclick="showModalWindow('modalWindow')"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3485127188!2d36.82509492938725!3d55.581524336976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1569250517048!5m2!1sru!2sru"
             width="1916" height="509" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
     </div>
-
+    <script>
+        function showModalWindow(id) {
+            var elem = document.getElementById('modalWindow');
+            if (elem.style.display == 'none') {
+                elem.style.display = 'inline-block';
+            }
+        }
+    </script>
 </body>
 
 </html>
