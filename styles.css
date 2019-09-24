@@ -316,3 +316,18 @@ td {
     top: 2141px;
     background: url(img/round_photo.jpg);
 }
+
+.photographer-name {
+    position: absolute;
+    width: 290px;
+    height: 43px;
+    left: 1126px;
+    top: 2361px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #5286EC;
+}
