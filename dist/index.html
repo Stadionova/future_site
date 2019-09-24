@@ -15,17 +15,22 @@
     <script src="main.js"></script>
     <div class="main-page">
         <!-- <div class="hat"> -->
-            <div class="logo"></div>
-            <div class="telephone">Телефон:</div>
-            <div class="number">8(800)-123-12-12</div>
-            <div class="main-photo">
-                <div class="title">
-                    <p>Эксклюзивная фотосессия при полете на вертолете</p>
-                </div>
-                <div class="procent">
-                </div>
-                <div class="booking">Забронировать место</div>
+        <div class="logo"></div>
+        <div class="telephone">Телефон:</div>
+        <div class="number">8(800)-123-12-12</div>
+        <div class="main-photo">
+            <div class="title">
+                <p>Эксклюзивная<span> фотосессия </span>при полете на вертолете</p>
             </div>
+            <div class="procent">
+                <p class="cost">Стоимость:</p>
+                <p class="price">1500</p>
+                <!-- <div class="procent__img"><img src="img/%.png" alt=""></div> -->
+            </div>
+            <div class="booking">
+                <p>Забронировать место</p>
+            </div>
+        </div>
         <!-- </div> -->
         <div class="photosession">
             <h2>Фотосессия в вертолете</h2>
@@ -59,14 +64,15 @@
         </div>
         <div class="first__text__paragraph">
             <h3 class="first__h3">Об организаторе:</h3>
-            <p>Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов
+            <p class="paragraph">Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы
+                экспертов
                 туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания
                 клиентов, специализирующихся на совместном использовании и частных турах.</p>
-            <p>Сначала мы (я и моя команда)
+            <p class="paragraph">Сначала мы (я и моя команда)
                 изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и
                 планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…</p>
             <div class="browse-box">
-                <a class="browse" href="#">Читать еще</a>
+                <a class="browse" href="#" style="text-decoration: none">Читать еще</a>
                 <img class="arrow_1" src="img/Arrow.png" alt="arrow_1">
             </div>
         </div>
@@ -76,15 +82,16 @@
                  При необходимости всегда возможно прерваться на обед/ужин. Более 50 фотографий на выходе с обработкой и
                 замечательные впечатления о Дубае !</p>
             <div class="browse-box">
-                <a class="browse" href="#">Читать еще</a>
+                <a class="browse" href="#" style="text-decoration: none">Читать еще</a>
                 <img class="arrow_1" src="img/Arrow.png" alt="arrow_1">
             </div>
         </div>
         <div class="photographer-photo">
+            <img src="img/heart.jpg" alt="">
             <div class="photographer-name">
-                <p>Марина Иванова</p>
-                <p>Фотограф</p>
-                <p>Показать больше информации о фотографе</p>
+                <p class="name">Марина Иванова</p>
+                <p class="proffesion">Фотограф</p>
+                <p class="more-about-photographer">Показать больше информации о фотографе</p>
             </div>
         </div>
         <div>
@@ -96,16 +103,15 @@
                 <tr>
                     <td>15:00 - 18:00<br><br>
                         <p>1500₽</p>
-                        <br><br>
                         <div class="button-date">Выбрать</div>
-                        Осталось — 1 место
+                        <p>Осталось — 1 место</p>
                     </td>
                 </tr>
                 <tr>
                     <td>19:00 - 22:00<br><br>
-                        1500₽<br><br>
+                        <p>1500₽</p>
                         <div class="button-date">Выбрать</div>
-                        Осталось — 1 место <br><br>
+                        <p>Осталось — 1 место</p><br><br>
                         <p class="cup__in__table"><img src="img/more_fifty.png" alt="">Более 50 отзывов с оценкой</p>
                     </td>
                 </tr>
