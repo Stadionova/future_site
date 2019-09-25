@@ -2,9 +2,6 @@
 
 * {
     margin: 0;
-    padding: 0;
-    font-family: 'Montserrat';
-    font-style: normal;
 }
 
 body {
@@ -27,18 +24,24 @@ body {
             height: 18px;
             left: 555px;
             top: 41px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
             font-size: 14px;
             line-height: 17px;
-            color: #B3B3B3; 
+            color: #B3B3B3;
         }
         .number {
             position: absolute;
-            width: 150px;
+            width: 108px;
             height: 18px;
-            left: 655px;
-            top: 1px;
+            left: 621px;
+            top: 41px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
             font-size: 14px;
-            line-height: 100px;
+            line-height: 17px;
             color: #37373F;
         }
         .main-photo {
@@ -210,7 +213,7 @@ body {
     }
 }
 
-.button__show-more-photos {
+.button__show-more-photos p {
     position: absolute;
     width: 166px;
     height: 19px;
@@ -223,21 +226,36 @@ body {
     color: #5286EC;
 }
 
+.button__show-more-photos img {
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    left: 850px;
+    top: 2036px;
+}
+
 .first__text__paragraph {
     width: 584px;
     margin-left: 390px;
     color: #37373F;
     line-height: 24px;
     .first__h3 {
+        position: absolute;
+        width: 173px;
+        height: 24px;
+        left: 391px;
+        top: 2110px;
+        font-family: Montserrat;
+        font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
         color: #37373F;
-        margin-top: 30px;
-        margin-bottom: 10px;
     }
-    .paragraph {
+    .first_paragraph{
+        position: absolute;
         width: 584px;
+        height: 242px;
         left: 391px;
         top: 2148px;
         font-family: Montserrat;
@@ -246,68 +264,68 @@ body {
         font-size: 16px;
         line-height: 24px;
         color: #37373F;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .first__text__paragraph p:last-child {
-        width: 126px;
-        height: 19px;
-        left: 391px;
-        top: 2395px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 23px;
-        color: #5286EC;
-        margin-top: 10px;
     }
 }
 
-    .browse-box {
-        width: 126px;
-        height: 19px;
-        left: 391px;
-        top: 2395px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 23px;
-        color: #5286EC;
-        margin-top: 10px;
-    }
-        .browse-box img {
-            width: 11px;
-            height: 6px;
-        }
-
-.second_paragraph {
-    width: 584px;
+.browse-box-first {
+    position: absolute;
+    width: 126px;
+    height: 19px;
     left: 391px;
-    top: 2492px;
+    top: 2395px;
+    font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    color: #37373F;
-    margin-left: 390px;
+    line-height: 23px;
+    color: #5286EC;
+}
+
+.browse-box-first img .browse-box-second img {
+    width: 11px;
+    height: 6px;
+}
+
+.browse-box-second {
+    position: absolute;
+    width: 126px;
+    height: 19px;
+    left: 392px;
+    top: 2620px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #5286EC;
+}
+
+.second__text__paragraph {
     .second__h3 {
+        position: absolute;
+        width: 254px;
+        height: 24px;
+        left: 391px;
+        top: 2454px;
+        font-family: Montserrat;
+        font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 26px;
         color: #37373F;
-        margin-top: 20px;
-        margin-bottom: 10px;
     }
-    .second_paragraph p:last-child {
-        width: 126px;
-        height: 19px;
-        left: 392px;
-        top: 2620px;
+    .second_paragraph {
+        position: absolute;
+        width: 584px;
+        height: 118px;
+        left: 391px;
+        top: 2492px;
+        font-family: Montserrat;
         font-style: normal;
-        font-weight: 500;
+        font-weight: normal;
         font-size: 16px;
-        line-height: 23px;
-        color: #5286EC;
+        line-height: 24px;
+        color: #37373F;
     }
 }
 
@@ -367,20 +385,21 @@ body {
 }
 
 .date__table {
-    width: 170px;
+    position: absolute;
+    width: 288px;
     height: 51px;
-    margin-left: 390px;
+    left: 390px;
     top: 2740px;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
     color: #37373F;
-    margin-bottom: 20px;
-    margin-top: 20px;
 }
 
 table {
+    position: absolute;
     width: 770px;
     height: 458px;
     left: 390px;
@@ -388,8 +407,6 @@ table {
     border: 1px solid #C7C7C7;
     box-sizing: border-box;
     border-collapse: collapse;
-    margin-left: 390px;
-    margin-bottom: 50px;
     tr,
     td {
         border: 1px solid #C7C7C7;
@@ -406,11 +423,89 @@ table {
             padding-bottom: 16px;
         }
         .cup__in__table {
-            height: 24px;
+            width: 282px;
+            left: 462px;
+            top: 3207px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
             font-size: 18px;
+            line-height: 26px;
             color: #37373F;
+            float: left;
         }
     }
+}
+
+.title__table {
+    width: 205px;
+    height: 24px;
+    left: 420px;
+    top: 2851px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #37373F;
+}
+
+.time__table {
+    width: 260px;
+    height: 24px;
+    left: 420px;
+    top: 2915px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #37373F;
+}
+
+.price__table {
+    width: 64px;
+    height: 22px;
+    left: 420px;
+    top: 2949px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #37373F;
+}
+
+.button-date {
+    width: 64px;
+    height: 18px;
+    left: 1034px;
+    top: 2951px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FC9B09;
+}
+
+.quantity-places__table {
+    width: 184px;
+    height: 24px;
+    left: 420px;
+    top: 2981px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #37373F;
+}
+
+.stars__table {
+    left: 744px;
+    top: 3209px;
+    display: inline;
 }
 
 #modalWindow {
@@ -498,34 +593,43 @@ table {
     }
 }
 
-.button__show-more-photos p {
-    float: left;
-    margin-right: 5px;
-}
-
-.arrow__before {
-    margin-left: 850px;
-    margin-top: 63px;
-}
-
-hr {
+.modal-window__map {
     position: absolute;
-    width: 569px;
-    height: 0px;
-    left: 391px;
-    top: 1423px;
+    width: 1916px;
+    height: 509px;
+    left: 0px;
+    top: 3361px;
+}
+
+.button__show-more-photos__footer {
+    position: absolute;
+    width: 165px;
+    height: 19px;
+    left: 880px;
+    top: 5053px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #5286EC;
+}
+
+.arrow__after {
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    left: 1010px;
+    top: 2036px;
 }
 
 .feedback {
-    .first_feedback {
-        margin-bottom: 100px;
-    }
     p:first-child {
         position: absolute;
         width: 121px;
         height: 24px;
         left: 390px;
-        top: 3700px;
+        top: 4001px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
@@ -533,100 +637,427 @@ hr {
         line-height: 29px;
         color: #37373F; 
     }
-    .photo__comment {
-        position: absolute;
-        width: 101px;
-        height: 101px;
-        left: 390px;
-        top: 3774px;
-        background: url(../dist/img/valery.jpg);
-    }
-    .name__feedback {
-        position: absolute;
-        width: 179px;
-        height: 22px;
-        left: 511px;
-        top: 3784px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        color: #37373F;
-    }
-    .prof__feedback {
-        position: absolute;
-        width: 128px;
-        height: 22px;
-        left: 511px;
-        top: 3816px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 21px;
-        color: #37373F;
-    }
-    .stars {
-        display: inline-block;
-        position: absolute;
-        height: 17px;
-        left: 510px;
-        top: 3848px;
-    }
-    .short-reaction {
-        position: absolute;
-        width: 285px;
-        height: 22px;
-        left: 698px;
-        top: 3849px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 21px;
-        color: #B3B3B3;
-    }
-    .comment {
-        position: absolute;
-        width: 510px;
-        height: 88px;
-        left: 510px;
-        top: 3891px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: #37373F;
-    }
-    .data {
-        position: absolute;
-        width: 534px;
-        height: 15px;
-        left: 511px;
-        top: 4001px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 21px;
-        color: #B3B3B3;
+    .first_feedback {
+        .photo__comment {
+            position: absolute;
+            width: 101px;
+            height: 101px;
+            left: 390px;
+            top: 4075px;
+            background: url(../dist/img/valery.jpg);
+        }
+        .name__feedback {
+            position: absolute;
+            width: 179px;
+            height: 22px;
+            left: 511px;
+            top: 4085px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #37373F;
+        }
+        .prof__feedback {
+            position: absolute;
+            width: 128px;
+            height: 22px;
+            left: 511px;
+            top: 4117px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #37373F;
+        }
+        .stars {
+            display: inline-block;
+            position: absolute;
+            height: 17px;
+            left: 510px;
+            top: 4149px;
+        }
+        .short-reaction {
+            position: absolute;
+            width: 285px;
+            height: 22px;
+            left: 698px;
+            top: 4150px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B3B3;
+        }
+        .comment {
+            position: absolute;
+            width: 510px;
+            height: 88px;
+            left: 510px;
+            top: 4192px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #37373F;
+        }
+        .data {
+            position: absolute;
+            width: 534px;
+            height: 15px;
+            left: 511px;
+            top: 4302px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B3B3;
+        }
+        .first_feedback-line {
+            position: absolute;
+            width: 510px;
+            height: 0px;
+            left: 510px;
+            top: 4352px;
+        }
     }
 }
 
-hr {
+.feedback {
+    .second_feedback {
+        .photo__comment__second {
+            position: absolute;
+            width: 101px;
+            height: 101px;
+            left: 390px;
+            top: 4382px;
+            background: url(../dist/img/vitaliy.jpg);
+        }
+        .name__feedback__second {
+            position: absolute;
+            width: 157px;
+            height: 22px;
+            left: 511px;
+            top: 4392px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #37373F;
+        }
+        .prof__feedback__second {
+            position: absolute;
+            width: 128px;
+            height: 22px;
+            left: 511px;
+            top: 4424px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #37373F;
+        }
+        .stars__second {
+            display: inline-block;
+            position: absolute;
+            height: 17px;
+            left: 510px;
+            top: 4456px;
+        }
+        .short-reaction__second {
+            position: absolute;
+            width: 285px;
+            height: 22px;
+            left: 698px;
+            top: 4457px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B3B3;
+        }
+        .comment__second {
+            position: absolute;
+            width: 510px;
+            height: 88px;
+            left: 510px;
+            top: 4499px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #37373F;
+        }
+        .data__second {
+            position: absolute;
+            width: 534px;
+            height: 15px;
+            left: 511px;
+            top: 4609px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B3B3;
+        }
+        .second_feedback-line {
+            position: absolute;
+            width: 510px;
+            height: 0px;
+            left: 510px;
+            top: 4659px;
+        }
+    }
+}
+
+.feedback {
+    .third_feedback {
+        .photo__comment__third {
+            position: absolute;
+            width: 101px;
+            height: 101px;
+            left: 390px;
+            top: 4689px;
+            background: url(../dist/img/jim.jpg);
+        }
+        .name__feedback__third {
+            position: absolute;
+            width: 157px;
+            height: 22px;
+            left: 511px;
+            top: 4699px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #37373F;
+        }
+        .stars__third {
+            display: inline-block;
+            position: absolute;
+            height: 17px;
+            left: 510px;
+            top: 4740px;
+        }
+        .short-reaction__third {
+            position: absolute;
+            width: 285px;
+            height: 22px;
+            left: 698px;
+            top: 4741px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B3B3;
+        }
+        .comment__third {
+            position: absolute;
+            width: 510px;
+            height: 88px;
+            left: 510px;
+            top: 4783px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #37373F;
+        }
+        .data__third {
+            position: absolute;
+            width: 534px;
+            height: 15px;
+            left: 511px;
+            top: 4968px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #B3B3B3;
+        }
+        .third_feedback-line{
+            position: absolute;
+            width: 510px;
+            height: 0px;
+            left: 510px;
+            top: 5006px;
+        }
+    }
+}
+
+.button__show-more-photos__footer p {
     position: absolute;
-    width: 510px;
+    width: 165px;
+    height: 19px;
+    left: 1051px;
+    top: 4752px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #5286EC;
+    float: left;
+}
+
+.button__show-more-photos__footer img {
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    left: 1030px;
+    top: 5053px;
+}
+
+.arrow__before__footer {
+    margin-left: 160px;
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    left: 1035px;
+    top: 4761px;
+}
+
+.footer {
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    left: -4px;
+    top: 5119px;
+    background: #FFFFFF;
+    margin-left: 461px;
+    img:first-child {
+        left: 0.38%;
+        right: 0.08%;
+        top: 0.66%;
+        bottom: 0%;
+        background: #000000;
+    }
+    .vk {
+        width: 25.5px;
+        height: 15.18px;
+        left: 1257px;
+        top: 5164.46px;
+        background: #5476A4;
+        margin-left: 671px;
+    }
+    .fb {
+        width: 25.49px;
+        height: 25.49px;
+        left: 1312.95px;
+        top: 5159px;
+        background: #4A68AD;
+        margin-left: 30px;
+    }
+    .inst {
+        width: 25.49px;
+        height: 25.5px;
+        left: 1368.44px;
+        top: 5159px;
+        background: #37373F;
+        margin-left: 30px;
+    }
+    .language {
+        width: 23px;
+        height: 19px;
+        left: 1424px;
+        top: 5162px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #37373F;
+        margin-left: 30px;
+    }
+    .arrow__language__footer {
+        width: 11px;
+        height: 6px;
+        left: 1453px;
+        top: 5169px;
+        margin-left: 30px;
+    }
+}
+
+.second__footer {
+    width: 1920px;
+    height: 77px;
+    left: 3px;
+    top: 5233px;
+    background: #FAF9F8;
+    margin-top: 1400px;
+    .mc {
+        position: absolute;
+        width: 39px;
+        height: 25px;
+        left: 457px;
+        margin-top: 13px;
+        top: 5246px;
+    }
+    .visa {
+        position: absolute;
+        width: 39px;
+        height: 27px;
+        left: 516px;
+        margin-top: 13px;
+        top: 5244px;
+    }
+    .support-number {
+        position: absolute;
+        width: 240px;
+        height: 18px;
+        left: 840px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #B3B3B3;
+        margin-top: 13px;
+        top: 5236px;
+    }
+    .year {
+        position: absolute;
+        width: 256px;
+        height: 18px;
+        left: 831px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #B3B3B3;
+        margin-top: 28px;
+        top: 5261px;
+    }
+}
+
+.after_read-more {
+    position: absolute;
+    width: 1139px;
     height: 0px;
-    left: 510px;
-    top: 4051px;
+    left: 391px;
+    top: 2690px;
 }
 
-.second_feedback {
-    margin-top: 40px;
+.after__show-all {
+    position: absolute;
+    width: 1139px;
+    height: 0px;
+    left: 390px;
+    top: 2073px;
 }
 
-.third_feedback {
-    margin-top: 40px;
-}
