@@ -258,8 +258,7 @@
             <label id="modal-close" class="modal__close"></label>
             <p class="book">Бронирование</p>
             <div class="field__div">
-                <p class="date__modal">Дата*</p><input class="field__date" type="text" name="key word"
-                    value="14.09.2019">
+                <p class="date__modal">Дата*</p><input class="field__date" type="text" name="key word" value="14.09.2019">
                 <p class="email">Email*</p><input class="field__email" type="text" name="key word"
                     value="Электронная почта">
                 <p class="name">Имя*</p><input class="field__name" type="text" name="key word" value="Иван">
@@ -267,17 +266,20 @@
                 <p class="telephone-number">Телефон*</p><input class="field__telephone" type="text" name="key word"
                     value="+7 (905) 184-81-40">
                 <p class="bank-card">Данные карты*</p>
-                <table class="modal__table">
-                    <tr>
-                        <td colspan="2"><input class="field__bank-card-number" type="text" name="key word"
-                                value="Номер карты"></td>
-                    </tr>
-                    <tr>
-                        <td><input class="field__bank-card-active" type="text" name="key word" value="Срок действия">
-                        </td>
-                        <td><input class="field__bank-card-cvv" type="text" name="key word" value="CVV"></td>
-                    </tr>
-                </table>
+                <div class="modal__table_container">
+                    <table class="modal__table">
+                        <tr>
+                            <td colspan="2"><input class="field__bank-card-number" type="text" name="key word"
+                                    value="Номер карты"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="field__bank-card-active" type="text" name="key word"
+                                    value="Срок действия">
+                            </td>
+                            <td><input class="field__bank-card-cvv" type="text" name="key word" value="CVV"></td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="agree_button">
                     <img src="img/agree.jpg" alt="">
                     <p>Я согласен с пользовательским соглашением и публичной офертой</p>
