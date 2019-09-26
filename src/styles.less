@@ -235,7 +235,7 @@ body {
 }
 
 .button__show-more-photos p {
-    width: 166px;
+    width: 200px;
     height: 19px;
     left: 871px;
     top: 2010px;
@@ -244,20 +244,25 @@ body {
     font-size: 17px;
     line-height: 25px;
     color: #5286EC;
-}
-
-.button__show-more-photos img {
-    width: 11px;
-    height: 6px;
-    left: 850px;
-    top: 2036px;
+    margin-left: 20px;
+    margin: 0;
 }
 
 .arrow__after {
+    float: right;
+    margin-right: 140px;
+    margin-bottom: 20px;
+}
+
+.arrow__before {
     width: 11px;
     height: 6px;
     left: 1040px;
     top: 2036px;
+    margin: 0;
+    float: left;
+    margin-top: 8px;
+    margin-right: 5px;
 }
 
 .inform-about-photosession {
@@ -360,6 +365,7 @@ body {
 .schedule-table {
     margin-left: 390px;
     margin-top: 450px;
+    margin: 0;
 }
 
 .photographer-photo {
@@ -368,8 +374,10 @@ body {
     height: 139px;
     margin-left: 1201px;
     background: url(../dist/img/round_photo.jpg);
-    .photographer-name {
-        margin-top: 150px;
+    margin-top: 68px;
+    img {
+        margin-left: 200px;
+    }
         .name {
             width: 163px;
             height: 22px;
@@ -381,6 +389,7 @@ body {
             font-size: 18px;
             line-height: 22px;
             color: #37373F;
+            margin-top: 120px;
         }
         .proffesion {
             width: 290px;
@@ -392,28 +401,18 @@ body {
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
-            margin-left: 45px;
+            margin-left: 55px;
             color: #37373F;
+            margin: 0;
+            margin-left: 40px;
         }
         .more-about-photographer {
             width: 200px;
-            height: 43px;
-            left: 1126px;
-            top: 2361px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
             font-size: 14px;
-            line-height: 21px;
             text-align: center;
             color: #5286EC;
         }
     }
-}
-
-.photographer-photo img {
-    margin-left: 200px;
-}
 
 .date__table {
     width: 288px;
@@ -426,6 +425,7 @@ body {
     font-size: 20px;
     line-height: 29px;
     color: #37373F;
+    margin-left: 390px;
 }
 
 table {
@@ -436,6 +436,7 @@ table {
     border: 1px solid #C7C7C7;
     box-sizing: border-box;
     border-collapse: collapse;
+    margin-left: 390px;
     tr,
     td {
         border: 1px solid #C7C7C7;
@@ -462,14 +463,15 @@ table {
             color: #37373F;
             float: left;
             margin-right: 10px;
+            margin: 0;
+            margin-right: 10px;
             margin-bottom: 48px;
             img {
                 margin-right: 10px;
             }
         }
         .stars__table {
-            margin-top: 5px;
-            display: inline-block;
+            margin-top: 7px;
         }
     }
 }
@@ -514,6 +516,7 @@ table {
     font-size: 18px;
     line-height: 22px;
     color: #37373F;
+    margin: 0;
 }
 
 .button-date {
@@ -540,16 +543,11 @@ table {
     font-size: 18px;
     line-height: 26px;
     color: #37373F;
+    margin: 0;
     margin-bottom: 20px;
 }
 
-.stars__table {
-    left: 744px;
-    top: 3209px;
-    display: inline;
-}
-
-#modalWindow {
+.modalWindow {
     width: 420px;
     height: 469px;
     background: #FFFFFF;
@@ -557,6 +555,7 @@ table {
     box-sizing: border-box;
     margin-top: 20px;
     margin-left: 390px;
+    position: absolute;
 }
 
 .three-prop__map {
@@ -572,7 +571,7 @@ table {
     margin-top: 20px;
 }
 
-#modalWindow img {
+.modalWindow img {
     width: 61px;
     height: 61px;
     left: 420px;
@@ -588,6 +587,7 @@ table {
     margin-left: 30px;
     background: url(../dist/img/round_photo_little.jpg);
     .photographer-name__modalWindow {
+        margin-top: 50px;
         .name {
             width: 300px;
             height: 22px;
@@ -633,10 +633,7 @@ table {
 }
 
 .modal-window__map {
-    width: 1916px;
-    height: 509px;
-    left: 0px;
-    top: 3550px;
+    margin-top: 82px;
 }
 
 .map-container {
@@ -655,14 +652,17 @@ table {
         font-weight: 500;
         font-size: 20px;
         line-height: 29px;
-        color: #37373F; 
+        color: #37373F;
+        margin: 0;
+        margin-top: 131px;
     }
     .first_feedback {
+        width: 800px;
         .photo__comment {
             width: 101px;
             height: 101px;
             left: 390px;
-            top: 4075px;
+            position: absolute;
             background: url(../dist/img/valery.jpg);
         }
         .name__feedback {
@@ -676,6 +676,8 @@ table {
             font-size: 18px;
             line-height: 22px;
             color: #37373F;
+            margin-left: 120px;
+            margin-top: 50px;
         }
         .prof__feedback {
             width: 128px;
@@ -688,12 +690,14 @@ table {
             font-size: 14px;
             line-height: 21px;
             color: #37373F;
+            margin-left: 120px;
         }
         .stars {
             display: inline-block;
             height: 17px;
             left: 510px;
             top: 4149px;
+            margin-left: 120px;
         }
         .short-reaction {
             width: 285px;
@@ -706,6 +710,9 @@ table {
             font-size: 14px;
             line-height: 21px;
             color: #B3B3B3;
+            margin: 0;
+            float: right;
+            margin-right: 210px;
         }
         .comment {
             width: 510px;
@@ -718,6 +725,7 @@ table {
             font-size: 16px;
             line-height: 24px;
             color: #37373F;
+            margin-left: 120px;
         }
         .data {
             width: 534px;
@@ -730,168 +738,199 @@ table {
             font-size: 14px;
             line-height: 21px;
             color: #B3B3B3;
+            margin-left: 120px;
         }
         .first_feedback-line {
+            margin: 0;
             width: 510px;
             height: 0px;
             left: 510px;
             top: 4352px;
+            margin-top: 35px;
+            margin-left: 120px;
         }
     }
 }
 
 .feedback {
     .second_feedback {
+        width: 800px;
         .photo__comment__second {
             width: 101px;
             height: 101px;
             left: 390px;
-            top: 4382px;
+            position: absolute;
             background: url(../dist/img/vitaliy.jpg);
         }
         .name__feedback__second {
-            width: 157px;
+            width: 179px;
             height: 22px;
             left: 511px;
-            top: 4392px;
+            top: 4085px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
             color: #37373F;
+            margin-left: 120px;
+            margin-top: 50px;
         }
         .prof__feedback__second {
             width: 128px;
             height: 22px;
             left: 511px;
-            top: 4424px;
+            top: 4117px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
             color: #37373F;
+            margin-left: 120px;
         }
         .stars__second {
             display: inline-block;
             height: 17px;
             left: 510px;
-            top: 4456px;
+            top: 4149px;
+            margin-left: 120px;
         }
         .short-reaction__second {
             width: 285px;
             height: 22px;
             left: 698px;
-            top: 4457px;
+            top: 4150px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
             color: #B3B3B3;
+            margin: 0;
+            float: right;
+            margin-right: 210px;
         }
         .comment__second {
             width: 510px;
             height: 88px;
             left: 510px;
-            top: 4499px;
+            top: 4192px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 24px;
             color: #37373F;
+            margin-left: 120px;
         }
         .data__second {
             width: 534px;
             height: 15px;
             left: 511px;
-            top: 4609px;
+            top: 4302px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
             color: #B3B3B3;
+            margin-left: 120px;
         }
         .second_feedback-line {
+            margin: 0;
             width: 510px;
             height: 0px;
             left: 510px;
-            top: 4659px;
+            top: 4352px;
+            margin-top: 35px;
+            margin-left: 120px;
         }
     }
 }
 
 .feedback {
     .third_feedback {
+        width: 800px;
         .photo__comment__third {
             width: 101px;
             height: 101px;
             left: 390px;
-            top: 4689px;
+            position: absolute;
             background: url(../dist/img/jim.jpg);
         }
         .name__feedback__third {
-            width: 157px;
+            width: 179px;
             height: 22px;
             left: 511px;
-            top: 4699px;
+            top: 4085px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
             color: #37373F;
+            margin-left: 120px;
+            margin-top: 50px;
         }
         .stars__third {
             display: inline-block;
             height: 17px;
             left: 510px;
-            top: 4740px;
+            top: 4149px;
+            margin-left: 120px;
         }
         .short-reaction__third {
             width: 285px;
             height: 22px;
             left: 698px;
-            top: 4741px;
+            top: 4150px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
             color: #B3B3B3;
+            margin: 0;
+            float: right;
+            margin-right: 210px;
         }
         .comment__third {
             width: 510px;
             height: 88px;
             left: 510px;
-            top: 4783px;
+            top: 4192px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             line-height: 24px;
             color: #37373F;
+            margin-left: 120px;
         }
         .data__third {
             width: 534px;
             height: 15px;
             left: 511px;
-            top: 4968px;
+            top: 4302px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 21px;
             color: #B3B3B3;
+            margin: 0;
+            margin-top: 100px;
+            margin-left: 120px;
         }
         .third_feedback-line{
             width: 510px;
             height: 0px;
             left: 510px;
-            top: 5006px;
+            top: 4352px;
+            margin: 0;
+            margin-top: 40px;
+            margin-left: 120px;
         }
     }
 }
@@ -1054,7 +1093,9 @@ table {
     height: 0px;
     left: 391px;
     top: 2690px;
-    margin-top: 500px;
+    margin-top: 460px;
+    margin-bottom: 50px;
+    margin-left: 390px;
 }
 
 .after__show-all {
@@ -1062,6 +1103,7 @@ table {
     height: 0px;
     left: 390px;
     top: 2073px;
+    margin-left: 390px;
 }
 
 .book {
@@ -1309,7 +1351,6 @@ table {
   
   .modal .modal__inner {
     top: 0;
-    // margin-top: 346px;
   }
   
   .modal__inner {
@@ -1322,10 +1363,8 @@ table {
     width: 615px;
     height: 887px;
     margin: auto;
-    /* overflow: auto; */
     background: #fff;
     border-radius: 5px;
-    /* padding: 1em 2em; */
   }
   
   .modal__close {

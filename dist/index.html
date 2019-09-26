@@ -106,8 +106,8 @@
             </div>
         </div>
         <div class="button__show-more-photos">
-            <img src="img/Arrow.png" alt="">
-            <p>Показать все фото</p>
+            <img class="arrow__before" src="img/Arrow.png" alt="">
+            <a class="browse" href="#" style="text-decoration: none">Показать все фото</a>
             <img class="arrow__after" src="img/Arrow.png" alt="">
         </div>
         <hr class="after__show-all">
@@ -144,134 +144,133 @@
 
         <div class="photographer-photo">
             <img src="img/heart.jpg" alt="">
-            <div class="photographer-name">
-                <p class="name">Марина Иванова</p>
-                <p class="proffesion">Фотограф</p>
-                <p class="more-about-photographer">Показать больше информации о фотографе</p>
-            </div>
+            <p class="name">Марина Иванова</p>
+            <p class="proffesion">Фотограф</p>
+            <p class="more-about-photographer">Показать больше информации о фотографе</p>
         </div>
-        <hr class="after_read-more">
-        <div class="schedule-table">
-            <h3 class="date__table">Доступная съемка в ближайшее время:</h3>
-            <table>
-                <tr>
-                    <td class="title__table">Пятница, 14 сентября</td>
-                </tr>
-                <tr>
-                    <td class="time__table">15:00 - 18:00<br><br>
-                        <p class="price__table" style="float: left">1500</p>
-                        <div class="button-date">Выбрать</div>
-                        <p class="quantity-places__table">Осталось — 1 место</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="time__table">19:00 - 22:00<br><br>
-                        <p class="price__table" style="float: left">1500</p>
-                        <div class="button-date">Выбрать</div>
-                        <p class="quantity-places__table">Осталось — 1 место</p><br><br>
-                        <p class="cup__in__table"><img src="img/more_fifty.png" alt="">Более 50 отзывов с оценкой</p>
-                        <div class="stars__table">
-                            <img src="img/star.jpg" alt="">
-                            <img src="img/star.jpg" alt="">
-                            <img src="img/star.jpg" alt="">
-                            <img src="img/star.jpg" alt="">
-                            <img src="img/star.jpg" alt="">
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="modal-window__map">
-            <div id="modalWindow">
-                <img src="img/orange.png" alt="">
-                <p class="three-prop__map">Где встречаемся?</p>
-                <p class="three-prop__map">Москва</p>
-                <img src="img/orange.png" alt="">
-                <p class="three-prop__map">Время съемки</p>
-                <p class="three-prop__map">3 часа</p>
-                <img src="img/orange.png" alt="">
-                <p class="three-prop__map">Мест осталось:</p>
-                <p class="three-prop__map">2 места</p>
-                <div style="margin-top: 10px" class="photographer-photo__modalWindow">
-                    <div class="photographer-name__modalWindow">
-                        <p class="name">Марина Иванова</p>
-                        <p class="proffesion">Фотограф</p>
-                        <p class="more-about-photographer">Показать больше информации</p>
+    </div>
+    <hr class="after_read-more">
+    <div class="schedule-table">
+        <h3 class="date__table">Доступная съемка в ближайшее время:</h3>
+        <table>
+            <tr>
+                <td class="title__table">Пятница, 14 сентября</td>
+            </tr>
+            <tr>
+                <td class="time__table">15:00 - 18:00<br><br>
+                    <p class="price__table" style="float: left">1500</p>
+                    <div class="button-date">Выбрать</div>
+                    <p class="quantity-places__table">Осталось — 1 место</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="time__table">19:00 - 22:00<br><br>
+                    <p class="price__table" style="float: left">1500</p>
+                    <div class="button-date">Выбрать</div>
+                    <p class="quantity-places__table">Осталось — 1 место</p><br><br>
+                    <p class="cup__in__table"><img src="img/more_fifty.png" alt="">Более 50 отзывов с оценкой</p>
+                    <div class="stars__table">
+                        <img src="img/star.jpg" alt="">
+                        <img src="img/star.jpg" alt="">
+                        <img src="img/star.jpg" alt="">
+                        <img src="img/star.jpg" alt="">
+                        <img src="img/star.jpg" alt="">
                     </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-window__map">
+        <div class="modalWindow">
+            <img src="img/orange.png" alt="">
+            <p class="three-prop__map">Где встречаемся?</p>
+            <p class="three-prop__map">Москва</p>
+            <img src="img/orange.png" alt="">
+            <p class="three-prop__map">Время съемки</p>
+            <p class="three-prop__map">3 часа</p>
+            <img src="img/orange.png" alt="">
+            <p class="three-prop__map">Мест осталось:</p>
+            <p class="three-prop__map">2 места</p>
+            <div style="margin-top: 10px" class="photographer-photo__modalWindow">
+                <div class="photographer-name__modalWindow">
+                    <p class="name">Марина Иванова</p>
+                    <p class="proffesion">Фотограф</p>
+                    <p class="more-about-photographer">Показать больше информации</p>
                 </div>
             </div>
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="1916" height="509" frameborder="0"
-                style="border:0;" allowfullscreen=""></iframe>
         </div>
-        <div class="feedback">
-            <p>Отзывы:</p>
-            <div class="first_feedback">
-                <img class="photo__comment" src="" alt="">
-                <p class="name__feedback">Валерия Антонова</p>
-                <p class="prof__feedback">Арт-директор</p>
-                <div class="stars">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                </div>
-                <p class="short-reaction">Супер! Я бы заказала съемку снова!</p>
-                <p class="comment">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все
-                    прошло просто
-                    замечательно. Фотки получились великолепные, отдельное спасибо фотографу!</p>
-                <p class="data">27 Апреля, 2019г.</p>
-                <hr class="first_feedback-line">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="1916" height="509" frameborder="0"
+            style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div class="feedback">
+        <p>Отзывы:</p>
+        <div class="first_feedback">
+            <img class="photo__comment" src="" alt="">
+            <p class="name__feedback">Валерия Антонова</p>
+            <p class="prof__feedback">Арт-директор</p>
+            <div class="stars">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
             </div>
-            <div class="second_feedback">
-                <img class="photo__comment__second" src="" alt="">
-                <p class="name__feedback__second">Виталий Петров</p>
-                <p class="prof__feedback__second">Фотограф</p>
-                <div class="stars__second">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt=""></div>
-                <p class="short-reaction__second">Супер! Я бы заказал съемку снова!</p>
-                <p class="comment__second">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный
-                    октябрьский
-                    день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная.
-                    Спасибо!</p>
-                <p class="data__second">19 Апреля, 2019г.</p>
-                <hr class="second_feedback-line">
-            </div>
-            <div class="third_feedback">
-                <img class="photo__comment__third" src="" alt="">
-                <p class="name__feedback__third">Джим Керри</p>
-                <div class="stars__third"><img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt="">
-                    <img src="img/star.jpg" alt=""></div>
-                <p class="short-reaction__third">Супер! Я бы заказал съемку снова!</p>
-                <p class="comment__third">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати
-                    закуски были
-                    вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания
-                    обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся
-                    за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
-                <p class="data__third">11 Апреля, 2019г.</p>
-                <hr class="third_feedback-line">
-                <div class="button__show-more-photos__footer">
-                    <img src="img/Arrow.png" alt="">
-                    <p>Показать Все (134)</p>
-                </div>
-                <img class="arrow__after__footer" src="img/Arrow.png" alt="">
-            </div>
+            <p class="short-reaction">Супер! Я бы заказала съемку снова!</p>
+            <p class="comment">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все
+                прошло просто
+                замечательно. Фотки получились великолепные, отдельное спасибо фотографу!</p>
+            <p class="data">27 Апреля, 2019г.</p>
+            <hr class="first_feedback-line">
         </div>
-        <div class="footer">
-            <img src="img/HELYFLY.jpg" alt="">
-            <img class="vk" src="img/vk.jpg" alt="">
-            <img class="fb" src="img/Facebook.jpg" alt="">
-            <img class="inst" src="img/Instragram.jpg" alt="">
-            <img class="language" src="img/RU.jpg" alt="">
-            <img class="arrow__language__footer" src="img/Arrow.png" alt="">
+        <div class="second_feedback">
+            <img class="photo__comment__second" src="" alt="">
+            <p class="name__feedback__second">Виталий Петров</p>
+            <p class="prof__feedback__second">Фотограф</p>
+            <div class="stars__second">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt=""></div>
+            <p class="short-reaction__second">Супер! Я бы заказал съемку снова!</p>
+            <p class="comment__second">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный
+                октябрьский
+                день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта отличная.
+                Спасибо!</p>
+            <p class="data__second">19 Апреля, 2019г.</p>
+            <hr class="second_feedback-line">
         </div>
+        <div class="third_feedback">
+            <img class="photo__comment__third" src="" alt="">
+            <p class="name__feedback__third">Джим Керри</p>
+            <div class="stars__third"><img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt="">
+                <img src="img/star.jpg" alt=""></div>
+            <p class="short-reaction__third">Супер! Я бы заказал съемку снова!</p>
+            <p class="comment__third">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати
+                закуски были
+                вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания
+                обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся
+                за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+            <p class="data__third">11 Апреля, 2019г.</p>
+            <hr class="third_feedback-line">
+            <div class="button__show-more-photos__footer">
+                <img src="img/Arrow.png" alt="">
+                <p>Показать Все (134)</p>
+            </div>
+            <img class="arrow__after__footer" src="img/Arrow.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/HELYFLY.jpg" alt="">
+        <img class="vk" src="img/vk.jpg" alt="">
+        <img class="fb" src="img/Facebook.jpg" alt="">
+        <img class="inst" src="img/Instragram.jpg" alt="">
+        <img class="language" src="img/RU.jpg" alt="">
+        <img class="arrow__language__footer" src="img/Arrow.png" alt="">
+    </div>
     </div>
     </div>
     <div class="second__footer">
