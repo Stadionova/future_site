@@ -29,7 +29,7 @@ function hideModal(mouseEvent) {
   modal.style.display = "none";
 }
 
-setTimeout(showModal, 2000);
+// setTimeout(showModal, 2000);
 // setTimeout(hideModal, 6000);
 
 function init() {
