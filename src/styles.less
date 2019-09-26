@@ -47,14 +47,12 @@ body {
             margin-left: 10px;
         }
         .main-photo {
-            position: absolute;
-            left: -2px;
-            top: 100px;
+            height: 840px;
+            position: relative;
             img {
                 max-width: 100%;
             }
             .title {
-                position: absolute;
                 width: 46.294%;
                 height: 89px;
                 left: 20.45929%;
@@ -62,6 +60,7 @@ body {
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 49px;
+                position: absolute;
                 p {
                     width: 850px;
                     color: #FFFFFF;
@@ -76,19 +75,19 @@ body {
 }
 
 .hat {
-
+    height: 100px;
 }
 
 .main-photo {
     .procent {
-        position: absolute;
         width: 224px;
-        height: 96px;
         left: 20.3549060542797%;
         top: 400px;
         background: #FC9B09;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
+        position: absolute;
+        height: 96px;
         .cost {
             width: 121px;
             height: 19px;
@@ -101,20 +100,22 @@ body {
             line-height: 151.16%;
             color: #FFFFFF;
             padding-left: 20px;
+            margin: 0;
+            margin-top: 11px;
         }
         .price {
             width: 113px;
             height: 36px;
             left: 413px;
             top: 538px;
-            font-family: Montserrat;
             font-style: normal;
             font-weight: 800;
             font-size: 35px;
             line-height: 151.16%;
             color: #FFFFFF;
             padding-left: 20px;
-            padding-bottom: 20px;
+            margin: 0;
+            padding-top: 4px;
         }
     }
     .booking {
@@ -139,63 +140,51 @@ body {
 
 .photosession {
     margin-left: 390px;
-    h2 {
-        width: 280px;
-        height: 90px;
-        left: 391px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        color: #37373F;
-        margin-top: 940px;
-    }
-    .description {
-        width: 500px;
-        height: 73px;
-        top: 1100px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 26px;
-        color: #37373F;
-        left: 391px;
-    }
-    .services {
-        width: 500px;
-        height: 20px;
-        left: 390px;
-        top: 1200px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        color: #37373F;
-        img {
-            width: 34.89px;
-            height: 32.28px;
+    .prop-photo {
+        width: 549px;
+        margin: 0;
+        float: left;
+        h2 {
+            margin: 0px;
+            width: 280px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            color: #37373F;
+        }
+        .description {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            color: #37373F;
+            left: 391px;
+        }
+        .services {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #37373F;
+            img {
+                width: 34.89px;
+                height: 32.28px;
+                margin-right: 10px;
+            }
+        }
+        .cup {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            color: #37373F;
+            margin-left: 10px;
+            margin: 0;
+            float: left;
             margin-right: 10px;
         }
-    }
-    .cup {
-        width: 300px;
-        height: 24px;
-        left: 430px;
-        top: 1455px;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 26px;
-        color: #37373F;
-        margin-top: 260px;
-        margin-left: 10px;
-    }
-    .headphones {
-        // position: absolute;
-        width: 554px;
-        height: 374px;
-        left: 979px;
-        top: 1010px;
-        background: url(../dist/img/headphones.jpg);
-        border-radius: 4px;
+        .headphones {
+            border-radius: 4px;
+        }
     }
 }
 
@@ -203,19 +192,16 @@ body {
     float: left;
     width: 27.36px;
     height: 22.98px;
-    left: 394.32px;
-    top: 1471px;
-    margin-top: 250px;
     margin-right: 10px;
 }
 
 .stars__cup {
     left: 716px;
     top: 1476px;
+    margin-top: 12px;
 }
 
 .more-comments_before {
-    // position: absolute;
     width: 569px;
     height: 0px;
     left: 391px;
@@ -223,7 +209,6 @@ body {
 }
 
 .more-comments_after {
-    // position: absolute;
     width: 569px;
     height: 0px;
     left: 391px;
@@ -232,9 +217,9 @@ body {
 
 .photo-package {
     p {
-        margin-top: 1500px;
+        margin-top: 120px;
         margin-left: 392px;
-        margin-bottom: 20px;
+        margin-bottom: 37px;
     }
     .many-photos {
         margin-left: 392px;
@@ -250,7 +235,6 @@ body {
 }
 
 .button__show-more-photos p {
-    position: absolute;
     width: 166px;
     height: 19px;
     left: 871px;
@@ -263,7 +247,6 @@ body {
 }
 
 .button__show-more-photos img {
-    position: absolute;
     width: 11px;
     height: 6px;
     left: 850px;
@@ -271,20 +254,25 @@ body {
 }
 
 .arrow__after {
-    position: absolute;
     width: 11px;
     height: 6px;
     left: 1040px;
     top: 2036px;
 }
 
+.inform-about-photosession {
+    margin-left: 390px;
+    width: 300px;
+    margin: 0;
+    float: left;
+}
+
 .first__text__paragraph {
     width: 584px;
-    margin-left: 390px;
     color: #37373F;
     line-height: 24px;
+    margin-left: 390px;
     .first__h3 {
-        position: absolute;
         width: 173px;
         height: 24px;
         left: 391px;
@@ -297,7 +285,6 @@ body {
         color: #37373F;
     }
     .first_paragraph{
-        position: absolute;
         width: 584px;
         height: 242px;
         left: 391px;
@@ -312,7 +299,6 @@ body {
 }
 
 .browse-box-first {
-    position: absolute;
     width: 126px;
     height: 19px;
     left: 391px;
@@ -331,7 +317,6 @@ body {
 }
 
 .browse-box-second {
-    position: absolute;
     width: 126px;
     height: 19px;
     left: 392px;
@@ -345,8 +330,8 @@ body {
 }
 
 .second__text__paragraph {
+    margin-left: 390px;
     .second__h3 {
-        position: absolute;
         width: 254px;
         height: 24px;
         left: 391px;
@@ -359,7 +344,6 @@ body {
         color: #37373F;
     }
     .second_paragraph {
-        position: absolute;
         width: 584px;
         height: 118px;
         left: 391px;
@@ -373,12 +357,16 @@ body {
     }
 }
 
+.schedule-table {
+    margin-left: 390px;
+    margin-top: 450px;
+}
+
 .photographer-photo {
-    position: absolute;
+    margin: 0;
     width: 139px;
     height: 139px;
-    left: 1201px;
-    margin-top: 158px;
+    margin-left: 1201px;
     background: url(../dist/img/round_photo.jpg);
     .photographer-name {
         margin-top: 150px;
@@ -428,7 +416,6 @@ body {
 }
 
 .date__table {
-    position: absolute;
     width: 288px;
     height: 51px;
     left: 390px;
@@ -442,7 +429,6 @@ body {
 }
 
 table {
-    position: absolute;
     width: 770px;
     height: 458px;
     left: 390px;
@@ -564,7 +550,6 @@ table {
 }
 
 #modalWindow {
-    position: absolute;
     width: 420px;
     height: 469px;
     background: #FFFFFF;
@@ -648,7 +633,6 @@ table {
 }
 
 .modal-window__map {
-    position: absolute;
     width: 1916px;
     height: 509px;
     left: 0px;
@@ -660,8 +644,8 @@ table {
 }
 
 .feedback {
+    margin-left: 390px;
     p:first-child {
-        position: absolute;
         width: 121px;
         height: 24px;
         left: 390px;
@@ -675,7 +659,6 @@ table {
     }
     .first_feedback {
         .photo__comment {
-            position: absolute;
             width: 101px;
             height: 101px;
             left: 390px;
@@ -683,7 +666,6 @@ table {
             background: url(../dist/img/valery.jpg);
         }
         .name__feedback {
-            position: absolute;
             width: 179px;
             height: 22px;
             left: 511px;
@@ -696,7 +678,6 @@ table {
             color: #37373F;
         }
         .prof__feedback {
-            position: absolute;
             width: 128px;
             height: 22px;
             left: 511px;
@@ -710,13 +691,11 @@ table {
         }
         .stars {
             display: inline-block;
-            position: absolute;
             height: 17px;
             left: 510px;
             top: 4149px;
         }
         .short-reaction {
-            position: absolute;
             width: 285px;
             height: 22px;
             left: 698px;
@@ -729,7 +708,6 @@ table {
             color: #B3B3B3;
         }
         .comment {
-            position: absolute;
             width: 510px;
             height: 88px;
             left: 510px;
@@ -742,7 +720,6 @@ table {
             color: #37373F;
         }
         .data {
-            position: absolute;
             width: 534px;
             height: 15px;
             left: 511px;
@@ -755,7 +732,6 @@ table {
             color: #B3B3B3;
         }
         .first_feedback-line {
-            position: absolute;
             width: 510px;
             height: 0px;
             left: 510px;
@@ -767,7 +743,6 @@ table {
 .feedback {
     .second_feedback {
         .photo__comment__second {
-            position: absolute;
             width: 101px;
             height: 101px;
             left: 390px;
@@ -775,7 +750,6 @@ table {
             background: url(../dist/img/vitaliy.jpg);
         }
         .name__feedback__second {
-            position: absolute;
             width: 157px;
             height: 22px;
             left: 511px;
@@ -788,7 +762,6 @@ table {
             color: #37373F;
         }
         .prof__feedback__second {
-            position: absolute;
             width: 128px;
             height: 22px;
             left: 511px;
@@ -802,13 +775,11 @@ table {
         }
         .stars__second {
             display: inline-block;
-            position: absolute;
             height: 17px;
             left: 510px;
             top: 4456px;
         }
         .short-reaction__second {
-            position: absolute;
             width: 285px;
             height: 22px;
             left: 698px;
@@ -821,7 +792,6 @@ table {
             color: #B3B3B3;
         }
         .comment__second {
-            position: absolute;
             width: 510px;
             height: 88px;
             left: 510px;
@@ -834,7 +804,6 @@ table {
             color: #37373F;
         }
         .data__second {
-            position: absolute;
             width: 534px;
             height: 15px;
             left: 511px;
@@ -847,7 +816,6 @@ table {
             color: #B3B3B3;
         }
         .second_feedback-line {
-            position: absolute;
             width: 510px;
             height: 0px;
             left: 510px;
@@ -859,7 +827,6 @@ table {
 .feedback {
     .third_feedback {
         .photo__comment__third {
-            position: absolute;
             width: 101px;
             height: 101px;
             left: 390px;
@@ -867,7 +834,6 @@ table {
             background: url(../dist/img/jim.jpg);
         }
         .name__feedback__third {
-            position: absolute;
             width: 157px;
             height: 22px;
             left: 511px;
@@ -881,13 +847,11 @@ table {
         }
         .stars__third {
             display: inline-block;
-            position: absolute;
             height: 17px;
             left: 510px;
             top: 4740px;
         }
         .short-reaction__third {
-            position: absolute;
             width: 285px;
             height: 22px;
             left: 698px;
@@ -900,7 +864,6 @@ table {
             color: #B3B3B3;
         }
         .comment__third {
-            position: absolute;
             width: 510px;
             height: 88px;
             left: 510px;
@@ -913,7 +876,6 @@ table {
             color: #37373F;
         }
         .data__third {
-            position: absolute;
             width: 534px;
             height: 15px;
             left: 511px;
@@ -926,7 +888,6 @@ table {
             color: #B3B3B3;
         }
         .third_feedback-line{
-            position: absolute;
             width: 510px;
             height: 0px;
             left: 510px;
@@ -935,8 +896,13 @@ table {
     }
 }
 
+.button__show-more-photos {
+    margin-left: 871px;
+    margin-top: 45px;
+    margin-bottom: 27px;
+}
+
 .button__show-more-photos__footer {
-    position: absolute;
     width: 165px;
     height: 19px;
     left: 880px;
@@ -973,7 +939,6 @@ table {
 }
 
 .arrow__after__footer {
-    position: absolute;
     width: 11px;
     height: 6px;
     left: 1070px;
@@ -981,7 +946,6 @@ table {
 }
 
 .footer {
-    position: absolute;
     width: 1920px;
     height: 100px;
     left: -4px;
@@ -1048,21 +1012,18 @@ table {
     margin-top: 3250px;
     background: #FAF9F8;
     .mc {
-        position: absolute;
         width: 39px;
         height: 25px;
         left: 457px;
         top: 5246px;
     }
     .visa {
-        position: absolute;
         width: 39px;
         height: 27px;
         left: 516px;
         top: 5244px;
     }
     .support-number {
-        position: absolute;
         width: 240px;
         height: 18px;
         left: 840px;
@@ -1075,7 +1036,6 @@ table {
         color: #B3B3B3;
     }
     .year {
-        position: absolute;
         width: 256px;
         height: 18px;
         left: 831px;
@@ -1090,15 +1050,14 @@ table {
 }
 
 .after_read-more {
-    position: absolute;
     width: 1139px;
     height: 0px;
     left: 391px;
     top: 2690px;
+    margin-top: 500px;
 }
 
 .after__show-all {
-    position: absolute;
     width: 1139px;
     height: 0px;
     left: 390px;
@@ -1117,8 +1076,8 @@ table {
     line-height: 33px;
     text-align: center;
     color: #37373F;
-    margin-top: 62px;
     margin-left: 88px;
+    margin: 0;
 }   
 
 .field__div {
@@ -1297,14 +1256,13 @@ table {
         margin-top: 10px;
     }
     .modal__table {
-        position: absolute;
         width: 420px;
         height: 89px;
         top: 570px;
         border: 1px solid #C7C7C7;
         box-sizing: border-box;
         border-radius: 3px;
-        left: 95px;
+        margin-left: 97px;
     }
     td input {
         border: none;
@@ -1316,20 +1274,6 @@ table {
         color: #C7C7C7;
         outline: none;
     }
-}
-
-input::-ms-value {
-    position: absolute;
-    width: 183px;
-    height: 20px;
-    left: 767px;
-    top: 476px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #C7C7C7;
 }
 
 .modal {
@@ -1365,6 +1309,7 @@ input::-ms-value {
   
   .modal .modal__inner {
     top: 0;
+    // margin-top: 346px;
   }
   
   .modal__inner {
