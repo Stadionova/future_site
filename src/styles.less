@@ -5,7 +5,7 @@ body {
     font-family: Montserrat;
     .main-page { 
         width: 100%; 
-        .logo {
+        .header__logo {
             width: 129px;
             height: 23px;
             left: 0.38%;
@@ -17,7 +17,7 @@ body {
             margin-top: 39.15px;
             float: left;
         }
-        .telephone {
+        .header__telephone {
             width: 66px;
             height: 18px;
             left: 555px;
@@ -30,9 +30,9 @@ body {
             margin-bottom: 10;
             display: inline-block;
             margin-top: 41px;
-            margin-left: 20px;
+            margin-left: 36.1px;
         }
-        .number {
+        .header__number {
             width: 108px;
             height: 18px;
             left: 621px;
@@ -44,42 +44,41 @@ body {
             line-height: 17px;
             color: #37373F;
             display: inline-block;
-            margin-left: 10px;
-        }
-        .main-photo {
-            height: 840px;
-            position: relative;
-            img {
-                max-width: 100%;
-            }
-            .title {
-                width: 46.294%;
-                height: 89px;
-                left: 20.45929%;
-                top: 34.04761%;
-                font-weight: bold;
-                font-size: 40px;
-                line-height: 49px;
-                position: absolute;
-                p {
-                    width: 850px;
-                    color: #FFFFFF;
-                    margin-top: 0px;
-                    span {
-                        color: #FC9B09;
-                    }
-                }
-            }
-        }        
+        }     
     }
 }
 
-.hat {
+header {
     height: 100px;
 }
 
 .main-photo {
-    .procent {
+    height: 840px;
+    position: relative;
+    img {
+        max-width: 100%;
+    }
+    .photo-desc__title {
+        width: 70%;
+        max-width: 860px;
+        height: 89px;
+        left: 20.45929%;
+        top: 34.04761%;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        position: absolute;
+        p {
+            max-width: 100%;
+            color: #FFFFFF;
+            font-weight: bold;
+            margin-top: 0px;
+            span {
+                color: #FC9B09;
+            }
+        }
+    }
+    .photo-desc__procent {
         width: 224px;
         left: 20.3549060542797%;
         top: 400px;
@@ -88,7 +87,7 @@ body {
         border-radius: 5px;
         position: absolute;
         height: 96px;
-        .cost {
+        .photo-desc__cost {
             width: 121px;
             height: 19px;
             left: 412px;
@@ -103,7 +102,7 @@ body {
             margin: 0;
             margin-top: 11px;
         }
-        .price {
+        .photo-desc__price {
             width: 113px;
             height: 36px;
             left: 413px;
@@ -118,7 +117,7 @@ body {
             padding-top: 4px;
         }
     }
-    .booking {
+    .photo-desc__booking-btn {
         position: absolute;
         font-family: Montserrat;
         font-style: normal;
@@ -140,6 +139,7 @@ body {
 
 .photosession {
     margin-left: 390px;
+    padding-top: 70px;
     .prop-photo {
         width: 549px;
         margin: 0;
@@ -148,7 +148,7 @@ body {
             margin: 0px;
             width: 280px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 1000;
             font-size: 40px;
             color: #37373F;
         }
@@ -272,7 +272,7 @@ body {
     float: left;
 }
 
-.first__text__paragraph {
+.first_text_paragraph {
     width: 584px;
     color: #37373F;
     line-height: 24px;
@@ -334,7 +334,7 @@ body {
     color: #5286EC;
 }
 
-.second__text__paragraph {
+.second_text_paragraph {
     margin-left: 390px;
     .second__h3 {
         width: 254px;
@@ -452,7 +452,7 @@ table {
             padding-top: 16px;
             padding-bottom: 16px;
         }
-        .cup__in__table {
+        .cup_in_table {
             left: 462px;
             top: 3207px;
             font-family: Montserrat;
@@ -755,14 +755,14 @@ table {
 .feedback {
     .second_feedback {
         width: 800px;
-        .photo__comment__second {
+        .photo_comment_second {
             width: 101px;
             height: 101px;
             left: 390px;
             position: absolute;
             background: url(../dist/img/vitaliy.jpg);
         }
-        .name__feedback__second {
+        .name_feedback_second {
             width: 179px;
             height: 22px;
             left: 511px;
@@ -776,7 +776,7 @@ table {
             margin-left: 120px;
             margin-top: 50px;
         }
-        .prof__feedback__second {
+        .prof_feedback_second {
             width: 128px;
             height: 22px;
             left: 511px;
@@ -852,14 +852,14 @@ table {
 .feedback {
     .third_feedback {
         width: 800px;
-        .photo__comment__third {
+        .photo_comment_third {
             width: 101px;
             height: 101px;
             left: 390px;
             position: absolute;
             background: url(../dist/img/jim.jpg);
         }
-        .name__feedback__third {
+        .name_feedback_third {
             width: 179px;
             height: 22px;
             left: 511px;
@@ -941,7 +941,7 @@ table {
     margin-bottom: 27px;
 }
 
-.button__show-more-photos__footer {
+.button_show-more-photos_footer {
     width: 165px;
     height: 19px;
     left: 880px;
@@ -954,7 +954,7 @@ table {
     color: #5286EC;
 }
 
-.button__show-more-photos__footer p {
+.button_show-more-photos_footer p {
     width: 200px;
     height: 19px;
     left: 1051px;
@@ -967,7 +967,7 @@ table {
     color: #5286EC;
 }
 
-.button__show-more-photos__footer img {
+.button_show-more-photos_footer img {
     width: 11px;
     height: 6px;
     left: 1030px;
@@ -977,7 +977,7 @@ table {
     margin-right: 10px;
 }
 
-.arrow__after__footer {
+.arrow_after_footer {
     width: 11px;
     height: 6px;
     left: 1070px;
@@ -1035,7 +1035,7 @@ table {
         color: #37373F;
         margin-left: 30px;
     }
-    .arrow__language__footer {
+    .arrow_language_footer {
         width: 11px;
         height: 6px;
         left: 1453px;
