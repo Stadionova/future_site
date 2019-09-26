@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             <label id="modal-close" class="modal__close"></label>
             <p class="book">Бронирование</p>
             <div class="field__div">
-                <p class="date_modal">Дата*</p><input class="field_date" type="text" name="key word" value="14.09.2019">
+                <p class="date__modal">Дата*</p><input class="field__date" type="text" name="key word" value="14.09.2019">
                 <p class="email">Email*</p><input class="field__email" type="text" name="key word"
                     value="Электронная почта">
                 <p class="name">Имя*</p><input class="field__name" type="text" name="key word" value="Иван">
@@ -55,15 +57,17 @@
         <div class="main-photo">
             <img src="img/helimain.jpg" alt="helimain">
             <div class="photo-desc">
-                <div class="photo-desc__title">
-                    <p>Эксклюзивная<span> фотосессия </span>при полете на вертолете</p>
-                </div>
-                <div class="photo-desc__procent">
-                    <p class="photo-desc__cost">Стоимость:</p>
-                    <p class="photo-desc__price">1500</p>
-                </div>
-                <div id="booking-btn" class="photo-desc__booking-btn">
-                    <p>Забронировать место</p>
+                <div class="photo-desc__container">
+                    <div class="photo-desc__title">
+                        <p>Эксклюзивная<span> фотосессия </span>при полете на вертолете</p>
+                    </div>
+                    <div class="photo-desc__procent">
+                        <p class="photo-desc__cost">Стоимость:</p>
+                        <p class="photo-desc__price">1500</p>
+                    </div>
+                    <div id="booking-btn" class="photo-desc__booking-btn">
+                        <p>Забронировать место</p>
+                    </div>
                 </div>
             </div>
         </div>

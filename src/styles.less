@@ -53,26 +53,37 @@ header {
 }
 
 .main-photo {
-    height: 840px;
     position: relative;
+    overflow: hidden;
     img {
-        max-width: 100%;
+        min-width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
+    .photo-desc {
+        top: 0px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .photo-desc__container {
+        padding-left: 20.3192901878914%;
+        padding-top: 14.9%;
+    }
+
     .photo-desc__title {
         width: 70%;
         max-width: 860px;
-        height: 89px;
-        left: 20.45929%;
-        top: 34.04761%;
         font-weight: bold;
         font-size: 40px;
         line-height: 49px;
-        position: absolute;
+        // position: absolute;
         p {
             max-width: 100%;
             color: #FFFFFF;
             font-weight: bold;
             margin-top: 0px;
+            margin-bottom: 2.27%;
             span {
                 color: #FC9B09;
             }
@@ -81,12 +92,12 @@ header {
     .photo-desc__procent {
         width: 224px;
         left: 20.3549060542797%;
-        top: 400px;
         background: #FC9B09;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
-        position: absolute;
-        height: 96px;
+        padding-top: 0.55%;
+        height: 78px;
+        margin-bottom: 1.5%;
         .photo-desc__cost {
             width: 121px;
             height: 19px;
@@ -100,7 +111,6 @@ header {
             color: #FFFFFF;
             padding-left: 20px;
             margin: 0;
-            margin-top: 11px;
         }
         .photo-desc__price {
             width: 113px;
@@ -118,7 +128,7 @@ header {
         }
     }
     .photo-desc__booking-btn {
-        position: absolute;
+        // position: absolute;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 900;
@@ -137,8 +147,23 @@ header {
     }
 }
 
+// #temnyi, #svetlyi { width: 430px; }
+
+// @media (max-width: 1220px) {
+//   #temnyi, #svetlyi { width: 380px; }
+// }
+
+// @media (max-width: 1120px) {
+//   #temnyi, #svetlyi { width: 325px; }
+// }
+
+// @media (max-width: 680px) {
+//   #temnyi, #svetlyi { width: 200px; }
+// }
+
 .photosession {
-    margin-left: 390px;
+
+    margin-left: 20.3549%;
     padding-top: 70px;
     .prop-photo {
         width: 549px;
@@ -193,6 +218,13 @@ header {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .photosession {
+        // background-color: lightblue;
+        margin-left: 15px;
+    }
+}
+
 .cup__img {
     float: left;
     width: 27.36px;
@@ -219,13 +251,12 @@ header {
 }
 
 .photo-package {
+    margin-left: 20.3549%;
     p {
         margin-top: 156px;
-        margin-left: 392px;
         margin-bottom: 37px;
     }
     .many-photos {
-        margin-left: 392px;
         width: 1300px;
         img {
             width: 277px;
@@ -1140,16 +1171,17 @@ table {
     line-height: 33px;
     text-align: center;
     color: #37373F;
-    margin-left: 88px;
     margin: 0;
+    margin-top: 62px;
+    margin-left: 88px;
 }   
 
 .field__div {
     .date__modal {
         width: 80px;
         height: 20px;
-        left: 746px;
-        top: 349px;
+        left: 747px;
+        top: 433px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
@@ -1157,25 +1189,24 @@ table {
         line-height: 20px;
         color: #37373F;
         margin-left: 96px;
-        margin-top: 31px;
+        margin-top: 10px;
     }
     .field__date{
         width: 420px;
         height: 44px;
-        left: 746px;
-        top: 379px;
+        left: 747px;
+        top: 463px;
         border: 1px solid #C7C7C7;
         box-sizing: border-box;
         border-radius: 3px;
         margin-left: 96px;
-        margin-top: 10px;
         padding-left: 20px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 20px;
-        color: #37373F;
+        color: #C7C7C7;
     }
     .email {
         width: 80px;
@@ -1200,7 +1231,6 @@ table {
         box-sizing: border-box;
         border-radius: 3px;
         margin-left: 96px;
-        margin-top: 10px;
         padding-left: 20px;
         font-family: Montserrat;
         font-style: normal;
@@ -1232,7 +1262,6 @@ table {
         box-sizing: border-box;
         border-radius: 3px;
         margin-left: 96px;
-        margin-top: 10px;
         padding-left: 20px;
         font-family: Montserrat;
         font-style: normal;
@@ -1264,7 +1293,6 @@ table {
         box-sizing: border-box;
         border-radius: 3px;
         margin-left: 96px;
-        margin-top: 10px;
         padding-left: 20px;
         font-family: Montserrat;
         font-style: normal;
@@ -1296,7 +1324,6 @@ table {
         box-sizing: border-box;
         border-radius: 3px;
         margin-left: 96px;
-        margin-top: 10px;
         padding-left: 20px;
         font-family: Montserrat;
         font-style: normal;
@@ -1431,7 +1458,8 @@ table {
   }
 
 .agree_button {
-    margin-top: 150px;
+    margin: 0;
+    margin-top: 34px;
     img {
         width: 16px;
         height: 16px;
@@ -1468,4 +1496,3 @@ table {
         margin-top: 23px;
     }
 }
-
