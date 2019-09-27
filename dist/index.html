@@ -39,21 +39,21 @@
             </div>
         </div>
         <div class="photosession">
-            <div class="prop-photo">
+            <div class="photosession__desc">
                 <h2>Фотосессия в вертолете</h2>
                 <p>Полет на вертолете это прекрасная возможность получить новые ощущения! А наш
                     замечательный фотограф
                     запечатлит лучшие моменты</p>
-                <div class="services">
+                <div class="photosession__services">
                     <p><img src="img/three_hours.png" alt="">3 часа съемки</p>
                     <p><img src="img/fifty_photos.png" alt="">Более 50 фотографий</p>
                     <p><img src="img/moscow_map.png" alt="">Москва</p>
                     <p><img src="img/messages.png" alt="">Готовы ответить на любые вопросы</p>
                 </div>
                 <hr>
-                <img class="cup__img" src="img/more_fifty.png" alt="">
-                <p class="cup">Более 50 отзывов с оценкой</p>
-                <div class="stars__cup">
+                <img class="photosession__cup-img" src="img/more_fifty.png" alt="">
+                <p class="photosession__cup-desc">Более 50 отзывов с оценкой</p>
+                <div class="photosession__stars">
                     <img src="img/star.jpg" alt="">
                     <img src="img/star.jpg" alt="">
                     <img src="img/star.jpg" alt="">
@@ -62,7 +62,7 @@
                 </div>
                 <hr>
             </div>
-            <div class="headphones col-xs-6">
+            <div class="photosession__photo-helicopter">
                 <img src="../dist/img/headphones.jpg" alt="Photo">
             </div>
         </div>
@@ -79,9 +79,9 @@
                 <img src="img/eight.jpg" alt="">
             </div>
             <div class="button__show-more-photos">
-                <img class="arrow__before" src="img/Arrow.png" alt="">
-                <a href="#" style="text-decoration: none">Показать все фото</a>
-                <img src="img/Arrow.png" alt="">
+                <a href="#"><img class="arrow__before" src="img/Arrow.png" alt=""></a>
+                <a class="show-all-photo" href="#" style="text-decoration: none">Показать все фото</a>
+                <a href="#"><img src="img/Arrow.png" alt=""></a>
             </div>
             <hr class="after__show-all">
         </div>
@@ -148,7 +148,8 @@
                     <p class="price__table" style="float: left">1500</p>
                     <div class="button-date">Выбрать</div>
                     <p class="quantity-places__table">Осталось — 1 место</p><br><br>
-                    <p class="cup_in_table"><img src="img/more_fifty.png" alt="">Более 50 отзывов с оценкой</p>
+                    <p class="cup_in_table"><img src="img/more_fifty.png" alt="">Более <span>50</span> отзывов с оценкой
+                    </p>
                     <div class="stars__table">
                         <img src="img/star.jpg" alt="">
                         <img src="img/star.jpg" alt="">
@@ -195,6 +196,7 @@
                 <img src="img/star.jpg" alt="">
                 <img src="img/star.jpg" alt="">
             </div>
+            <img class="checkMark" src="img/checkMark.jpg" alt="">
             <p class="short-reaction">Супер! Я бы заказала съемку снова!</p>
             <p class="comment">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все
                 прошло просто
@@ -211,7 +213,9 @@
                 <img src="img/star.jpg" alt="">
                 <img src="img/star.jpg" alt="">
                 <img src="img/star.jpg" alt="">
-                <img src="img/star.jpg" alt=""></div>
+                <img src="img/star.jpg" alt="">
+            </div>
+            <img class="checkMark" src="img/checkMark.jpg" alt="">
             <p class="short-reaction__second">Супер! Я бы заказал съемку снова!</p>
             <p class="comment__second">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный
                 октябрьский
@@ -227,7 +231,9 @@
                 <img src="img/star.jpg" alt="">
                 <img src="img/star.jpg" alt="">
                 <img src="img/star.jpg" alt="">
-                <img src="img/star.jpg" alt=""></div>
+                <img src="img/star.jpg" alt="">
+            </div>
+            <img class="checkMark" src="img/checkMark.jpg" alt="">
             <p class="short-reaction__third">Супер! Я бы заказал съемку снова!</p>
             <p class="comment__third">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати
                 закуски были
@@ -237,9 +243,9 @@
             <p class="data__third">11 Апреля, 2019г.</p>
             <hr class="third_feedback-line">
             <div class="button_show-more-photos_footer">
-                <img class="arrow_before_footer" src="img/Arrow.png" alt="">
+                <a href="#"><img class="arrow_before_footer" src="img/Arrow.png" alt=""></a>
                 <a class="browse" href="#" style="text-decoration: none">Показать Все (134)</a>
-                <img class="arrow_after_footer" src="img/Arrow.png" alt="">
+                <a href="#"><img class="arrow_after_footer" src="img/Arrow.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -267,7 +273,8 @@
             <label id="modal-close" class="modal__close"></label>
             <p class="book">Бронирование</p>
             <div class="field__div">
-                <p class="date__modal">Дата*</p><input class="field__date" type="text" name="key word" value="14.09.2019">
+                <p class="date__modal">Дата*</p><input class="field__date" type="text" name="key word"
+                    value="14.09.2019">
                 <p class="email">Email*</p><input class="field__email" type="text" name="key word"
                     value="Электронная почта">
                 <p class="name">Имя*</p><input class="field__name" type="text" name="key word" value="Иван">

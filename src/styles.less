@@ -145,7 +145,7 @@ body {
 .photosession {
     margin-left: 20.3549%;
     padding-top: 70px;
-    .prop-photo {
+    .photosession__desc {
         width: 549px;
         margin: 0;
         float: left;
@@ -165,7 +165,7 @@ body {
             color: #37373F;
             left: 391px;
         }
-        .services {
+        .photosession__services {
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
@@ -183,14 +183,14 @@ body {
         hr {
             margin-top: 39px;
         }
-        .cup__img {
+        .photosession__cup-img {
             float: left;
             width: 27.36px;
             height: 22.98px;
             margin-right: 10px;
             margin-top: 30px;
         }
-        .cup {
+        .photosession__cup-desc {
             font-weight: normal;
             font-size: 18px;
             line-height: 26px;
@@ -201,12 +201,12 @@ body {
             margin-right: 10px;
             margin-top: 32px;
         }
-        .stars__cup {
+        .photosession__stars {
             left: 716px;
             top: 1476px;
             margin-top: 44px;
         }
-        .headphones {
+        .photosession__photo-helicopter {
             border-radius: 4px;
         }
     }
@@ -240,10 +240,10 @@ body {
             height: 6px;
             margin: 0;
             float: left;
-            margin-top: 8px;
+            margin-top: 11px;
             margin-right: 6px;
         }
-        a {
+        .show-all-photo {
             width: 200px;
             height: 19px;
             left: 871px;
@@ -259,8 +259,14 @@ body {
     }
 }
 
+.button__show-more-photos {
+    .show-all-photo:hover {
+        color: #FC9B09;
+        font-weight: 600;
+    }
+}
+
 .after__show-all {
-    width: 1139px;
     margin-right: 100px;
     height: 0px;
 }
@@ -281,7 +287,7 @@ body {
             top: 2110px;
             font-family: Montserrat;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 18px;
             line-height: 26px;
             color: #37373F;
@@ -384,10 +390,12 @@ body {
         top: 2454px;
         font-family: Montserrat;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 26px;
         color: #37373F;
+        margin: 0;
+        margin-top: 40px;
     }
     .second_paragraph {
         width: 584px;
@@ -470,10 +478,10 @@ body {
 }
 
 .after_read-more {
-    width: 1139px;
     height: 0px;
     margin-top: 460px;
     margin-bottom: 50px;
+    margin-right: 100px;
 }
 
 .schedule-table {
@@ -485,11 +493,10 @@ body {
         height: 51px;
         font-family: Montserrat;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 29px;
         color: #37373F;
-        // margin-left: 390px;
     }
     table {
         width: 770px;
@@ -534,6 +541,10 @@ body {
             }
         }
     }
+}
+
+.cup_in_table span {
+    font-weight: 600;
 }
 
 .schedule-table {
@@ -726,7 +737,10 @@ body {
         .stars {
             display: inline-block;
             height: 17px;
-            margin-left: 120px;
+            margin-left: 19px;
+        }
+        .checkMark {
+            margin-left: 50px;
         }
         .short-reaction {
             width: 285px;
@@ -812,7 +826,10 @@ body {
             height: 17px;
             left: 510px;
             top: 4149px;
-            margin-left: 120px;
+            margin-left: 19px;
+        }
+        .checkMark {
+            margin-left: 50px;
         }
         .short-reaction__second {
             width: 285px;
@@ -893,7 +910,10 @@ body {
             height: 17px;
             left: 510px;
             top: 4149px;
-            margin-left: 120px;
+            margin-left: 19px;
+        }
+        .checkMark {
+            margin-left: 50px;
         }
         .short-reaction__third {
             width: 285px;
@@ -959,6 +979,10 @@ body {
             color: #5286EC;
             margin-left: 500px;
             margin-top: 47px;
+            .browse:hover {
+                color: #FC9B09;
+                font-weight: 600;
+            }
             .arrow_before_footer {
                 width: 11px;
                 height: 6px;
