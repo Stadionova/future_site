@@ -143,7 +143,8 @@ body {
 }
 
 .photosession {
-    margin-left: 20.3549%;
+        // margin-left: 20.3549%;
+    margin-left: 0;
     padding-top: 70px;
     .photosession__desc {
         width: 549px;
@@ -212,13 +213,13 @@ body {
     }
 }
 
-.photo-package {
-    margin-left: 20.3549%;
+.gallery {
+    margin-left: 0;
     p {
         margin-top: 156px;
         margin-bottom: 37px;
     }
-    .many-photos {
+    .gallery__photos {
         width: 1300px;
         img {
             width: 277px;
@@ -229,13 +230,13 @@ body {
         }
     }
 
-    .button__show-more-photos {
+    .gallery__button {
         margin: 0;
         margin-left: 39%;
         margin-top: 45px;
         margin-bottom: 27px;
 
-        .arrow__before {
+        .gallery__arrow {
             width: 11px;
             height: 6px;
             margin: 0;
@@ -259,73 +260,40 @@ body {
     }
 }
 
-.button__show-more-photos {
-    .show-all-photo:hover {
+.gallery__button {
+    .gallery__button-text:hover {
         color: #FC9B09;
         font-weight: 600;
     }
 }
 
-.after__show-all {
-    margin-right: 100px;
-    height: 0px;
+.first_paragraph {
+    width: 584px;
+    height: 242px;
+    left: 391px;
+    top: 2148px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #37373F;
 }
 
-.inform-about-photosession {
-    margin-left: 390px;
-    width: 300px;
+.browse-box-first a {
+    width: 200px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #5286EC;
+    margin-left: 20px;
     margin: 0;
-    float: left;
-    .first_text_paragraph {
-        width: 584px;
-        color: #37373F;
-        line-height: 24px;
-        h3 {
-            width: 173px;
-            height: 24px;
-            left: 391px;
-            top: 2110px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 26px;
-            color: #37373F;
-        }
-        .first_paragraph {
-            width: 584px;
-            height: 242px;
-            left: 391px;
-            top: 2148px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            color: #37373F;
-        }
-        a {
-            width: 200px;
-            height: 19px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 17px;
-            line-height: 25px;
-            color: #5286EC;
-            margin-left: 20px;
-            margin: 0;
-        }
-    }
-
-    .after__show-all {
-        width: 1139px;
-        height: 0px;
-        margin-left: 0px;
-    }
 }
 
 .organizator-info {
-    margin-left: 20.3549%;
+    margin-left: 0;
 
     .inform-about-photosession {
         margin: 0;
@@ -343,7 +311,7 @@ body {
                 top: 2110px;
                 font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
                 line-height: 26px;
                 color: #37373F;
@@ -379,8 +347,6 @@ body {
         }
     }
 }
-
-
 
 .second_text_paragraph {
     .second__h3 {
@@ -481,12 +447,12 @@ body {
     height: 0px;
     margin-top: 460px;
     margin-bottom: 50px;
-    margin-right: 100px;
 }
 
 .schedule-table {
     margin: 0;
-    margin-left: 20.3549%;
+        // margin-left: 20.3549%;
+    margin-left: 0;
     margin-top: 450px;
     .date__table {
         width: 288px;
@@ -690,7 +656,8 @@ body {
 }
 
 .feedback {
-    margin-left: 20.3549%;
+        // margin-left: 20.3549%;
+    margin-left: 0;
     p:first-child {
         width: 121px;
         height: 24px;
@@ -1009,10 +976,8 @@ body {
 .footer {
     width: 1920px;
     height: 100px;
-    left: -4px;
-    top: 5119px;
     background: #FFFFFF;
-    margin-left: 461px;
+    margin-left: 71px;
     img:first-child {
         left: 0.38%;
         right: 0.08%;
@@ -1475,38 +1440,28 @@ td input {
 }
 
 
-@media only screen and (max-width: 1400px) {
-    .photosession {
-        margin-left: 9%;
-    }
-    .photo-package {
-        margin-left: 9%;
-    }
-    .organizator-info {
-        margin-left: 9%;
-    }
-    .schedule-table {
-        margin-left: 9%;
-    }
-    .feedback {
-        margin-left: 9%;
-    }
+.container {
+    width: 1137px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-@media only screen and (max-width: 700px) {
-    .photosession {
-        margin-left: 15px;
-    }
-    .photo-package {
-        margin-left: 15px;
-    }
-    .organizator-info {
-        margin-left: 15px;
-    }
-    .schedule-table {
-        margin-left: 15px;
-    }
-    .feedback {
-        margin-left: 15px;
+@media (max-width: 1120px){
+    .container {
+        width: 970px;
+    } 
+}
+
+@media (max-width: 992px){
+    .container {
+        width: 758px;
+    } 
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 758px;
     }
 }
