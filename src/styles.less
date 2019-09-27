@@ -219,7 +219,7 @@ body {
 }
 
 .gallery__button {
-    .gallery__button-text:hover {
+    .gallery__button-inner:hover {
         color: #FC9B09;
         font-weight: 600;
     }
@@ -596,325 +596,68 @@ body {
 }
 
 .feedback {
-        // margin-left: 20.3549%;
-    margin-left: 0;
     p:first-child {
-        width: 121px;
         height: 24px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
         font-size: 20px;
         line-height: 29px;
         color: #37373F;
-        margin: 0;
         margin-top: 131px;
     }
-    .first_feedback {
-        width: 800px;
-        .photo__comment {
-            width: 101px;
-            height: 101px;
-            margin: 0;
+    .feedback__desc {
+        .feedback__photo {
             float: left;
         }
-        .name__feedback {
-            width: 179px;
-            height: 22px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
+        .feedback__text-comment {
+            padding-left: 120px;
+        }
+        .feedback__name {
             font-size: 18px;
             line-height: 22px;
             color: #37373F;
-            margin-left: 120px;
             margin-top: 50px;
         }
-        .prof__feedback {
-            width: 128px;
-            height: 22px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #37373F;
-            margin-left: 120px;
-        }
-        .stars {
-            display: inline-block;
+        .feedback__prof {
             height: 17px;
-            margin-left: 19px;
         }
-        .checkMark {
-            margin-left: 50px;
+        .feedback__stars {
+            width: 150px;
+            float: left;
         }
-        .short-reaction {
-            width: 285px;
-            height: 22px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #B3B3B3;
+        .feedback__short-comment {
             margin: 0;
-            float: right;
-            margin-right: 210px;
+            padding-right: 5px;
         }
-        .comment {
+        .feedback__comment {
             width: 510px;
-            height: 88px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
             line-height: 24px;
             color: #37373F;
-            margin-left: 120px;
         }
-        .data {
-            width: 534px;
+        .feedback__date {
             height: 15px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
             font-size: 14px;
             line-height: 21px;
             color: #B3B3B3;
-            margin-left: 120px;
         }
-        .first_feedback-line {
+        .feedback__line {
             margin: 0;
             width: 510px;
-            height: 0px;
             margin-top: 35px;
-            margin-left: 120px;
-        }
-    }
-    .second_feedback {
-        width: 800px;
-        .photo_comment_second {
-            width: 101px;
-            height: 101px;
-            margin: 0;
-            float: left;
-            background: url(../dist/img/vitaliy.jpg);
-        }
-        .name_feedback_second {
-            width: 179px;
-            height: 22px;
-            left: 511px;
-            top: 4085px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
-            color: #37373F;
-            margin-left: 120px;
-            margin-top: 50px;
-        }
-        .prof_feedback_second {
-            width: 128px;
-            height: 22px;
-            left: 511px;
-            top: 4117px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #37373F;
-            margin-left: 120px;
-        }
-        .stars__second {
-            display: inline-block;
-            height: 17px;
-            left: 510px;
-            top: 4149px;
-            margin-left: 19px;
-        }
-        .checkMark {
-            margin-left: 50px;
-        }
-        .short-reaction__second {
-            width: 285px;
-            height: 22px;
-            left: 698px;
-            top: 4150px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #B3B3B3;
-            margin: 0;
-            float: right;
-            margin-right: 210px;
-        }
-        .comment__second {
-            width: 510px;
-            height: 88px;
-            left: 510px;
-            top: 4192px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            color: #37373F;
-            margin-left: 120px;
-        }
-        .data__second {
-            width: 534px;
-            height: 15px;
-            left: 511px;
-            top: 4302px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #B3B3B3;
-            margin-left: 120px;
-        }
-        .second_feedback-line {
-            margin: 0;
-            width: 510px;
-            height: 0px;
-            left: 510px;
-            top: 4352px;
-            margin-top: 35px;
-            margin-left: 120px;
-        }
-    }
-    .third_feedback {
-        width: 800px;
-        .photo_comment_third {
-            width: 101px;
-            height: 101px;
-            margin: 0;
-            float: left;
-            background: url(../dist/img/jim.jpg);
-        }
-        .name_feedback_third {
-            width: 179px;
-            height: 22px;
-            left: 511px;
-            top: 4085px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
-            color: #37373F;
-            margin-left: 120px;
-            margin-top: 50px;
-        }
-        .stars__third {
-            display: inline-block;
-            height: 17px;
-            left: 510px;
-            top: 4149px;
-            margin-left: 19px;
-        }
-        .checkMark {
-            margin-left: 50px;
-        }
-        .short-reaction__third {
-            width: 285px;
-            height: 22px;
-            left: 698px;
-            top: 4150px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #B3B3B3;
-            margin: 0;
-            float: right;
-            margin-right: 210px;
-        }
-        .comment__third {
-            width: 510px;
-            height: 88px;
-            left: 510px;
-            top: 4192px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            color: #37373F;
-            margin-left: 120px;
-        }
-        .data__third {
-            width: 534px;
-            height: 15px;
-            left: 511px;
-            top: 4302px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 21px;
-            color: #B3B3B3;
-            margin: 0;
-            margin-top: 100px;
-            margin-left: 120px;
-        }
-        .third_feedback-line{
-            width: 510px;
-            height: 0px;
-            left: 510px;
-            top: 4352px;
-            margin: 0;
-            margin-top: 40px;
-            margin-left: 120px;
-        }
-        .button_show-more-photos_footer {
-            height: 19px;
-            left: 880px;
-            top: 5053px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 17px;
-            line-height: 25px;
-            color: #5286EC;
-            margin-left: 500px;
-            margin-top: 47px;
-            .browse:hover {
-                color: #FC9B09;
-                font-weight: 600;
-            }
-            .arrow_before_footer {
-                width: 11px;
-                height: 6px;
-                left: 1030px;
-                top: 5053px;
-            }
-            a {
-                width: 200px;
-                height: 19px;
-                left: 1051px;
-                top: 4752px;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 17px;
-                line-height: 25px;
-                color: #5286EC;
-                margin-top: 47px;
-            }
         }
     }
 }
 
+.feedback__check-mark {
+    float: left;
+    padding-right: 5px;
+}
+
+.button_show-more-photos_footer {
+    width: 200px;
+    margin: auto;
+    padding-top: 47px;
+}
+
 .footer {
-    width: 1920px;
     height: 100px;
     background: #FFFFFF;
     margin-left: 71px;
@@ -972,17 +715,20 @@ body {
     }
 }
 
+.second__footer__container {
+    background: #FAF9F8;
+}
+
 .second__footer {
-    width: 1920px;
     height: 77px;
     left: 3px;
     margin-top: 3250px;
-    background: #FAF9F8;
     margin: 0;
     margin-top: 41px;
     .mc_visa {
-        width: 300px;
-        margin-left: 454px;
+        width: 130px;
+        padding-top: 11px;
+        padding-left: 65px;
         float: left;
         .mc {
             width: 39px;
@@ -992,42 +738,38 @@ body {
         .visa {
             width: 39px;
             height: 27px;
-            left: 516px;
-            top: 5244px;
-            margin-top: 13px;
-            margin-left: 20px;
+            margin-left: 16px;
         }
     }
     .contact_date {
-        position: absolute;
         margin-top: 10px;
+        margin-left: 38.6%;
         .support-number {
-            width: 240px;
+            display: block;
+            margin: 0;
+            padding-top: 5px;
+            width: 500px;
             height: 18px;
-            left: 840px;
-            top: 5236px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 17px;
             color: #B3B3B3;
-            margin: 0;
-            margin-left: 837px;
+            padding-left: 10px;
         }
         .year {
-            width: 256px;
+            width: 500px;
             height: 18px;
-            left: 831px;
-            top: 5261px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 17px;
             color: #B3B3B3;
+            display: block;
             margin: 0;
-            margin-left: 828px;
+            padding-top: 7px;
         }
     }
 }
@@ -1378,7 +1120,6 @@ td input {
     box-sizing: border-box;
     border-radius: 3px;
 }
-
 
 .container {
     width: 1137px;
