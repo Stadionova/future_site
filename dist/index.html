@@ -169,27 +169,32 @@
             </div>
         </div>
     </div>
-    <div class="modal-window__map">
-        <div class="modalWindow">
-            <img src="img/orange.png" alt="">
-            <p class="prop__question">Где встречаемся?</p>
-            <p class="prop__answer">Москва</p>
-            <img src="img/orange.png" alt="">
-            <p class="prop__question">Время съемки</p>
-            <p class="prop__answer">3 часа</p>
-            <img src="img/orange.png" alt="">
-            <p class="prop__question">Мест осталось:</p>
-            <p class="prop__answer">2 места</p>
-            <div style="margin-top: 10px" class="photographer-photo__modalWindow">
-                <div class="photographer-name__modalWindow">
-                    <p class="name">Марина Иванова</p>
-                    <p class="proffesion">Фотограф</p>
-                    <p class="more-about-photographer">Показать больше информации</p>
+    <div class="map">
+        <div class="map-yandex">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="100%" height="509" frameborder="0"
+                style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="container">
+            <div class="map-info">
+                <img src="img/orange.png" alt="">
+                <p class="map-info__question">Где встречаемся?</p>
+                <p class="map-info__answer">Москва</p>
+                <img src="img/orange.png" alt="">
+                <p class="map-info__question">Время съемки</p>
+                <p class="map-info__answer">3 часа</p>
+                <img src="img/orange.png" alt="">
+                <p class="map-info__question">Мест осталось:</p>
+                <p class="map-info__answer">2 места</p>
+                <div style="margin-top: 10px" class="map-info__photo">
+                    <div class="map-info__date">
+                        <p class="map-info__name">Марина Иванова</p>
+                        <p class="map-info__prof">Фотограф</p>
+                        <p class="map-info__addition">Показать больше информации</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="1916" height="509" frameborder="0"
-            style="border:0;" allowfullscreen=""></iframe>
+        <div class="map-info__placeholder"></div>
     </div>
     <div class="container">
         <div class="feedback">
@@ -280,66 +285,69 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="button_show-more-photos_footer">
-                        <a href="#"><img class="arrow_before_footer" src="img/Arrow.png" alt=""></a>
-                        <a class="browse" href="#" style="text-decoration: none">Показать Все (134)</a>
-                        <a href="#"><img class="arrow_after_footer" src="img/Arrow.png" alt=""></a>
+                    <div class="feedback__button-photos">
+                        <a href="#"><img src="img/Arrow.png" alt=""></a>
+                        <a href="#" style="text-decoration: none">Показать Все (134)</a>
+                        <a href="#"><img src="img/Arrow.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <img src="img/HELYFLY.jpg" alt="">
-            <img class="vk" src="img/vk.jpg" alt="">
-            <img class="fb" src="img/Facebook.jpg" alt="">
-            <img class="inst" src="img/Instragram.jpg" alt="">
-            <img class="language" src="img/RU.jpg" alt="">
-            <img class="arrow_language_footer" src="img/Arrow.png" alt="">
+        <div class="footer__up">
+            <img class="footer__up__logo" src="img/HELYFLY.jpg" alt="">
+            <div class="footer__up__social">
+                <img class="footer__up__vk" src="img/vk.jpg" alt="">
+                <img class="footer__up__fb" src="img/Facebook.jpg" alt="">
+                <img class="footer__up__inst" src="img/Instragram.jpg" alt="">
+                <img class="footer__up__language" src="img/RU.jpg" alt="">
+                <img class="footer__up__arrow" src="img/Arrow.png" alt="">
+            </div>
         </div>
     </div>
 
-    <div class="second__footer__container">
-        <div class="second__footer container">
-            <div class="mc_visa">
-                <img class="mc" src="img/MC.jpg" alt="">
-                <img class="visa" src="img/VISA.jpg" alt="">
+    <div class="footer">
+        <div class="footer__down container">
+            <div class="footer__down__mc-visa">
+                <img class="footer__down__mc" src="img/MC.jpg" alt="">
+                <img class="footer__down__visa" src="img/VISA.jpg" alt="">
             </div>
-            <div class="contact_date">
-                <p class="support-number">Тех. поддержка: 8(800)700-00-00</p>
-                <p class="year">© 2018 HELYFLY. All Rights Reserved.</p>
+            <div class="footer__down__info">
+                <p class="footer__down__number">Тех. поддержка: 8(800)700-00-00</p>
+                <p class="footer__down__year">© 2018 HELYFLY. All Rights Reserved.</p>
             </div>
         </div>
     </div>
-    <div id="modal" class="modal">
-        <label class="modal__bg"></label>
-        <div class="modal__inner">
-            <label id="modal-close" class="modal__close"></label>
-            <p class="book">Бронирование</p>
-            <div class="field__div">
-                <p class="date__modal">Дата*</p><input class="field__date" type="text" name="key word"
-                    value="14.09.2019">
-                <p class="email">Email*</p><input class="field__email" type="text" name="key word"
-                    value="Электронная почта">
-                <p class="name">Имя*</p><input class="field__name" type="text" name="key word" value="Иван">
-                <p class="surname">Фамилия*</p><input class="field__surname" type="text" name="key word" value="Громов">
-                <p class="telephone-number">Телефон*</p><input class="field__telephone" type="text" name="key word"
-                    value="+7 (905) 184-81-40">
-                <p class="bank-card">Данные карты*</p>
-                <div class="modal__table_container">
-                    <table class="modal__table">
+    <div id="modal" class="modal-window">
+        <label class="modal-window__back-color"></label>
+        <div class="modal-window__inner">
+            <label id="modal-close" class="modal-window__close"></label>
+            <p class="modal-window__title">Бронирование</p>
+            <div class="modal-window__form">
+                <p class="modal-window__field-date">Дата*</p><input class="modal-window__inner-date" type="text"
+                    name="key word" value="14.09.2019">
+                <p class="modal-window__field-email">Email*</p><input class="modal-window__inner-email" type="text"
+                    name="key word" value="Электронная почта">
+                <p class="modal-window__field-name">Имя*</p><input class="modal-window__inner-name" type="text"
+                    name="key word" value="Иван">
+                <p class="modal-window__field-surname">Фамилия*</p><input class="modal-window__inner-surname"
+                    type="text" name="key word" value="Громов">
+                <p class="modal-window__field-number">Телефон*</p><input class="modal-window__inner-number" type="text"
+                    name="key word" value="+7 (905) 184-81-40">
+                <p class="modal-window__cards">Данные карты*</p>
+                <div class="modal-window__cards-table">
+                    <table class="modal-window__table">
                         <tr>
-                            <td colspan="2"><input class="field__bank-card-number" type="text" name="key word"
-                                    value="Номер карты"></td>
+                            <td colspan="2"><input type="text" name="key word" value="Номер карты"></td>
                         </tr>
                         <tr>
-                            <td><input class="field__bank-card-active" type="text" name="key word"
+                            <td><input class="modal-window__card-period" type="text" name="key word"
                                     value="Срок действия">
                             </td>
-                            <td><input class="field__bank-card-cvv" type="text" name="key word" value="CVV"></td>
+                            <td><input class="modal-window__card-cvv" type="text" name="key word" value="CVV"></td>
                         </tr>
                     </table>
                 </div>
-                <div class="agree_button">
+                <div class="modal-window__button">
                     <img src="img/agree.jpg" alt="">
                     <p>Я согласен с пользовательским соглашением и публичной офертой</p>
                     <button>Забронировать</button>

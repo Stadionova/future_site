@@ -512,16 +512,27 @@ body {
     }
 }
 
-.modal-window__map {
+.map {
     margin-top: 82px;
-    .modalWindow {
+
+    .map-yandex {
+        position: absolute;
+        width: 100%;
+    }
+
+    @media (max-width: 768px){
+        .map-yandex {
+            position: static;
+        }
+    }
+
+    .map-info {
         width: 420px;
         height: 469px;
         background: #FFFFFF;
         border: 1px solid #C7C7C7;
         box-sizing: border-box;
         margin-top: 20px;
-        margin-left: 390px;
         position: absolute;
         img {
             width: 61px;
@@ -531,7 +542,7 @@ body {
             margin-left: 30px;
             margin-right: 18px;
         }
-        .prop__question {
+        .map-info__question {
             height: 21px;
             font-family: Montserrat;
             font-style: normal;
@@ -540,7 +551,7 @@ body {
             line-height: 27px;
             color: #37373F;
         }
-        .prop__answer {
+        .map-info__answer {
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
@@ -548,14 +559,14 @@ body {
             line-height: 26px;
             color: #37373F;
         }
-        .photographer-photo__modalWindow {
+        .map-info__photo {
             width: 67px;
             height: 67px;
             margin-left: 30px;
             background: url(../dist/img/round_photo_little.jpg);
-            .photographer-name__modalWindow {
+            .map-info__date {
                 margin-top: 50px;
-                .name {
+                .map-info__name {
                     width: 300px;
                     height: 22px;
                     font-family: Montserrat;
@@ -567,7 +578,7 @@ body {
                     margin-left: 90px;
                     margin-top: 20px;
                 }
-                .proffesion {
+                .map-info__prof {
                     width: 85px;
                     font-family: Montserrat;
                     font-style: normal;
@@ -578,7 +589,7 @@ body {
                     margin-left: 90px;
                     margin-top: 5px;
                 }
-                .more-about-photographer {
+                .map-info__addition {
                     width: 279px;
                     height: 22px;
                     font-family: Montserrat;
@@ -593,6 +604,11 @@ body {
             }
         }
     }
+}
+
+.map-info__placeholder {
+    height: 513px;
+    width: 100%;
 }
 
 .feedback {
@@ -651,100 +667,100 @@ body {
     padding-right: 5px;
 }
 
-.button_show-more-photos_footer {
+.feedback__button-photos {
     width: 200px;
     margin: auto;
     padding-top: 47px;
 }
 
-.footer {
-    height: 100px;
+.feedback__button-photos a:hover {
+    color: #FC9B09;
+    font-weight: 600;
+}
+
+.footer__up {
     background: #FFFFFF;
-    margin-left: 71px;
-    img:first-child {
+    padding-left: 65px;
+    padding-top: 74px;
+    padding-bottom: 74px;
+
+    .footer__up__social {
+        float: right;
+        padding: 0px 65px 60px 0;
+        width: 250px;
+    }
+
+    .footer__up__logo {
+        display: block;
+        float: left;
+        clear: right;
         left: 0.38%;
         right: 0.08%;
         top: 0.66%;
         bottom: 0%;
-        background: #000000;
-        margin-top: 97px;
+        padding-top: 20px;
     }
-    .vk {
+    .footer__up__vk {
         width: 25.5px;
         height: 15.18px;
-        left: 1257px;
-        top: 5164.46px;
-        background: #5476A4;
-        margin-left: 671px;
+        padding-right: 31px;
     }
-    .fb {
+    .footer__up__fb {
         width: 25.49px;
         height: 25.49px;
-        left: 1312.95px;
-        top: 5159px;
-        background: #4A68AD;
-        margin-left: 30px;
+        padding-right: 31px;
     }
-    .inst {
+    .footer__up__inst {
         width: 25.49px;
         height: 25.5px;
-        left: 1368.44px;
-        top: 5159px;
-        background: #37373F;
-        margin-left: 30px;
+        padding-right: 31px;
     }
-    .language {
-        width: 23px;
-        height: 19px;
-        left: 1424px;
-        top: 5162px;
+    .footer__up__language {
+        width: 21px;
+        height: 14px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
         line-height: 18px;
         color: #37373F;
-        margin-left: 30px;
+        padding: 16px 2px 0 0;
     }
-    .arrow_language_footer {
+    .footer__up__arrow {
         width: 11px;
         height: 6px;
-        left: 1453px;
-        top: 5169px;
-        margin-bottom: 5px;
     }
 }
 
-.second__footer__container {
+.footer {
     background: #FAF9F8;
 }
 
-.second__footer {
+.footer__down {
     height: 77px;
     left: 3px;
     margin-top: 3250px;
     margin: 0;
-    margin-top: 41px;
-    .mc_visa {
+    .footer__down__mc-visa {
         width: 130px;
         padding-top: 11px;
         padding-left: 65px;
         float: left;
-        .mc {
+        .footer__down__mc {
             width: 39px;
             height: 25px;
             top: 5246px;
         }
-        .visa {
+        .footer__down__visa {
             width: 39px;
             height: 27px;
             margin-left: 16px;
         }
     }
-    .contact_date {
+    .footer__down__info {
         margin-top: 10px;
         margin-left: 38.6%;
-        .support-number {
+        .footer__down__number {
             display: block;
             margin: 0;
             padding-top: 5px;
@@ -758,7 +774,7 @@ body {
             color: #B3B3B3;
             padding-left: 10px;
         }
-        .year {
+        .footer__down__year {
             width: 500px;
             height: 18px;
             font-family: Montserrat;
@@ -782,7 +798,7 @@ body {
     }
 }
 
-.modal {
+.modal-window {
     display: none;
     z-index: 99;
     position: fixed;
@@ -797,7 +813,7 @@ body {
     transition: opacity .25s ease;
     opacity: 1;
     visibility: visible;
-    .modal__bg {
+    .modal-window__back-color {
         position: absolute;
         top: 0;
         right: 0;
@@ -805,7 +821,7 @@ body {
         left: 0;
         cursor: pointer;
     }
-    .modal__inner {
+    .modal-window__inner {
         transition: top 0.25s ease;
         position: absolute;
         top: -5%;
@@ -817,7 +833,7 @@ body {
         margin: auto;
         background: #fff;
         border-radius: 5px;
-        .modal__close {
+        .modal-window__close {
             position: absolute;
             right: 1em;
             top: 1em;
@@ -825,8 +841,7 @@ body {
             height: 1.1em;
             cursor: pointer;
         }
-        .book {
-            width: 439px;
+        .modal-window__title {
             height: 24.95px;
             left: 738px;
             top: 292.94px;
@@ -838,23 +853,27 @@ body {
             text-align: center;
             color: #37373F;
             margin: 0;
-            margin-top: 62px;
-            margin-left: 88px;
+            margin-left: auto;
+            display: block;
+            margin-right: auto;
+            padding-top: 62px;
+            padding-bottom: 31px;
         }   
-        .field__div {
-            .date__modal {
+        .modal-window__form {
+            .modal-window__field-date {
                 width: 68%;
                 height: 20px;
                 font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
                 color: #37373F;
+                margin: 0;
                 margin-left: 96px;
-                margin-top: 10px;
+                padding-bottom: 10px;
             }
-            .field__date{
+            .modal-window__inner-date {
                 width: 68%;
                 height: 44px;
                 left: 747px;
@@ -869,23 +888,23 @@ body {
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 20px;
-                color: #C7C7C7;
+                color: #37373F;
             }
-            .email {
+            .modal-window__field-email {
                 width: 80px;
                 height: 20px;
                 left: 747px;
                 top: 433px;
                 font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
                 color: #37373F;
                 margin-left: 96px;
                 margin-top: 10px;
             }
-            .field__email {
+            .modal-window__inner-email {
                 width: 68%;
                 height: 44px;
                 left: 747px;
@@ -902,21 +921,21 @@ body {
                 line-height: 20px;
                 color: #C7C7C7;
             }
-            .name {
+            .modal-window__field-name {
                 width: 53px;
                 height: 20px;
                 left: 747px;
                 top: 517px;
                 font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
                 color: #37373F;
                 margin-left: 96px;
                 margin-top: 10px;
             }
-            .field__name {
+            .modal-window__inner-name {
                 width: 68%;
                 height: 44px;
                 left: 747px;
@@ -933,21 +952,21 @@ body {
                 line-height: 20px;
                 color: #37373F;
             }
-            .surname {
+            .modal-window__field-surname {
                 width: 123px;
                 height: 20px;
                 left: 747px;
                 top: 601px;
                 font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
                 color: #37373F;
                 margin-left: 96px;
                 margin-top: 10px;
             }
-            .field__surname {
+            .modal-window__inner-surname {
                 width: 68%;
                 height: 44px;
                 left: 747px;
@@ -964,21 +983,21 @@ body {
                 line-height: 20px;
                 color: #37373F;
             }
-            .telephone-number {
+            .modal-window__field-number {
                 width: 123px;
                 height: 20px;
                 left: 747px;
                 top: 685px;
                 font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
                 color: #37373F;
                 margin-left: 96px;
                 margin-top: 10px;
             }
-            .field__telephone {
+            .modal-window__inner-number {
                 width: 68%;
                 height: 44px;
                 left: 747px;
@@ -995,25 +1014,25 @@ body {
                 line-height: 20px;
                 color: #C7C7C7;
             }
-            .bank-card {
+            .modal-window__cards {
                 width: 130px;
                 height: 20px;
                 left: 747px;
                 top: 769px;
                 font-family: Montserrat;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 16px;
                 line-height: 20px;
                 color: #37373F;
                 margin-left: 96px;
                 margin-top: 10px;
             }
-            .modal__table_container {
+            .modal-window__cards-table {
                 width: 68%;
                 height: 89px;
                 margin-left: 97px;
-                .modal__table {
+                .modal-window__table {
                     width: 100%;
                     height: 89px;
                     border: 1px solid #C7C7C7;
@@ -1021,15 +1040,15 @@ body {
                     border-radius: 3px;
                     border-collapse: collapse;
                     margin-left: 0px;
-                    .field__bank-card-active {
+                    .modal-window__card-period {
                         width: 140px;
                     }
-                    .field__bank-card-cvv {
+                    .modal-window__card-cvv {
                         width: 140px;
                     }
                 }
             }
-            .agree_button {
+            .modal-window__button {
                 margin: 0;
                 margin-top: 34px;
                 img {
@@ -1043,7 +1062,7 @@ body {
                     margin-bottom: 100px;
                     float: left;
                     margin-right: 10px;
-                    margin-left: 95px;
+                    margin-left: 98px;
                 }
                 p {
                     width: 396px;
@@ -1084,7 +1103,7 @@ td input {
     padding-left: 20px;
 }
   
-.modal__close:after {
+.modal-window__close:after {
     content: '';
     position: absolute;
     width: 2px;
@@ -1097,7 +1116,7 @@ td input {
     top: 0;
 }
 
-.modal__close:before {
+.modal-window__close:before {
     content: '';
     position: absolute;
     width: 2px;
@@ -1110,12 +1129,12 @@ td input {
     top: 0;
 }
   
-.modal__close:hover:after,
-.modal__close:hover:before {
+.modal-window__close:hover:after,
+.modal-window__close:hover:before {
     background: #aaa;
 }
   
-.modal__table td {
+.modal-window__table td {
     border: 1px solid #C7C7C7;
     box-sizing: border-box;
     border-radius: 3px;
